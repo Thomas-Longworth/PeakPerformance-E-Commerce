@@ -56,7 +56,8 @@
             </ul>
         </div>
     </nav>
-
+   
+    {% if messages %}
  
     <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="10000">
         <div class="toast-header">
@@ -68,17 +69,18 @@
             </button>
         </div>
         <div class="toast-body">
-        {% if messages %}
+    
         <ul class="messages">
             {% for message in messages %}
             <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
                 {% endfor %}
         </ul>
-        {% endif %}
+       
 
 
         </div>
     </div>
+    {% endif %}
    
     <div class = "container">
 
