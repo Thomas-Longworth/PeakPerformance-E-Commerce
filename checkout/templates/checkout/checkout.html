@@ -1,7 +1,16 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 {% load static %}
 {% load bag_tools %}
+
+
+<link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+
+
+
 {% block content %}
+
+
+
 <div class="overlay"></div>
 <div class="container">
     <div class="row">
@@ -27,11 +36,7 @@
             <div class="row">
                 <div class="col-2 mb-1">
                     <a href="{% url 'product_detail' item.product.id %}">
-                        {% if item.product.image %}
-                        <img class="w-100" src="{{ item.product.image.url }}" alt="{{ product.name }}">
-                        {% else %}
-                        <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-                        {% endif %}
+
                     </a>
                 </div>
                 <div class="col-7">
@@ -123,4 +128,12 @@
         </div>
     </div>
 </div>
+{% endblock %}
+
+
+{% block postloadjs %}
+{{ block.super }}
+{{ stripe_public_key|json_script:"id_stripe_public_key" }}
+{{ client_secret|json_script:"id_client_secret" }}
+<script src="{% static 'js/stripe_elements.js' %}"></script>
 {% endblock %}

@@ -11,10 +11,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {% endblock %}
 
+
+
+
     {% block extra_meta %}
     {% endblock %}
 
     {% block corecss %}
+    <script src="https://js.stripe.com/v3/"></script>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -56,9 +61,9 @@
             </ul>
         </div>
     </nav>
-   
+
     {% if messages %}
- 
+
     <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="10000">
         <div class="toast-header">
             <img src="..." class="rounded mr-2" alt="...">
@@ -69,20 +74,20 @@
             </button>
         </div>
         <div class="toast-body">
-    
-        <ul class="messages">
-            {% for message in messages %}
-            <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
-                {% endfor %}
-        </ul>
-       
+
+            <ul class="messages">
+                {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+                    {% endfor %}
+            </ul>
+
 
 
         </div>
     </div>
     {% endif %}
-   
-    <div class = "container">
+
+    <div class="container">
 
         <form method="GET" action="{% url 'products' %}">
             <div class="input-group w-100">
@@ -128,7 +133,8 @@
     <script type="text/javascript">
         $('.toast').toast('show');
     </script>
-    <script src="https://js.stripe.com/v3/"></script>
+    {% block postloadjs %}
+    {% endblock %}
 
 </body>
 
