@@ -32,6 +32,6 @@ def checkout(request):
     context = {
         'order_form': order_form,
         'stripe_public_key': 'pk_test_51NYA8TDPblgmPxPeVWA8hk1wxXrUjU1SQLg8webAMZ3Kp1WNceM5Gaiv0WrEWmPiQXze7UWq9JqzozsGOFNJ00y6fPtEJi',
-
+        'client_secret': intent.client_secret,
     }
     return render(request, template, context)
