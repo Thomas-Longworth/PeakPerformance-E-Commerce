@@ -75,21 +75,16 @@
             </button>
         </div>
         <div class="toast-body">
-
             <ul class="messages">
                 {% for message in messages %}
                 <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
                     {% endfor %}
             </ul>
-
-
-
         </div>
     </div>
     {% endif %}
 
     <div class="container">
-
         <form method="GET" action="{% url 'products' %}">
             <div class="input-group w-100">
                 <input class="form-control border border-black rounded-0" type="text" name="q"
