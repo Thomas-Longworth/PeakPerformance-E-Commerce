@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8000-thomas-longworth-peakper-uphedgsn5e.us2.codeanyapp.com']
+    '8000-thomas-longworth-peakper-uphedgsn5e.us2.codeanyapp.com', 'peak-perfomance.herokuapp.com']
 
 
 # Application definition
