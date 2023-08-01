@@ -28,7 +28,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-thomas-longworth-peakper-uphedgsn5e.us2.codeanyapp.com']
+ALLOWED_HOSTS = [
+    '8000-thomas-longworth-peakper-uphedgsn5e.us2.codeanyapp.com']
 
 
 # Application definition
