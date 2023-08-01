@@ -20,16 +20,16 @@
             <div>{{ product.price}}</div>
             <a>test</a>
             <a class="button" class="button" href="{% url 'product_detail' product.id %}">View Product</a>
+            {% if request.user.is_superuser %}
+
             <a href="{% url 'edit_product' product.id %}">Edit</a>
             <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+            {% endif %}
 
 
         </div>
 
-        <a>test</a>
-        <a href="{% url 'edit_product' product.id %}">Edit</a>
-        <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
-        <a>test</a>
+
 
 
         {% endfor %}
