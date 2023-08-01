@@ -18,8 +18,20 @@
             <div>{{ product.name }}</div>
             <div>{{ product.description}}</div>
             <div>{{ product.price}}</div>
-            <a class="button" href="{% url 'product_detail' product.id %}">View Product</a>
+            <a>test</a>
+            <a class="button" class="button" href="{% url 'product_detail' product.id %}">View Product</a>
+            <a href="{% url 'edit_product' product.id %}">Edit</a>
+            <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+
+
         </div>
+
+        <a>test</a>
+        <a href="{% url 'edit_product' product.id %}">Edit</a>
+        <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+        <a>test</a>
+
+
         {% endfor %}
     </div>
 </div>
