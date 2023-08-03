@@ -1,28 +1,29 @@
-# newsletter/views.py
-from django.shortcuts import render, redirect
-from .forms import SubscriberForm
+# app_name/views.py
+
+from django.shortcuts import render
 from django.core.mail import send_mail
-from django.conf import settings
-from django.core.mail import EmailMessage, get_connection
+from .forms import EmailForm
+from .models import EmailSubscriber
 
 
-def subscribe(request):
+def email_form_view(request):
     if request.method == 'POST':
-        form = SubscriberForm(request.POST)
+        form = EmailForm(request.POST)
         if form.is_valid():
-            form.save()
-            send_newsletter_email(
-                form.cleaned_data['name'], form.cleaned_data['email'])
-            # Create a 'success' URL for successful form submission
-            return redirect('subscribe')
+            email = form.cleaned_data['email']
+            # Save the email address to the database
+            subscriber = EmailSubscriber(email=email)
+            subscriber.save()
+
+            # Send the email
+            send_mail(
+                'Subject of the email',
+                'Content of the email',
+                'your_gmail_username@gmail.com',
+                [email],
+                fail_silently=False,
+            )
+            return render(request, 'main/index.html')
     else:
-        form = SubscriberForm()
-    return render(request, 'newsletter/subscribe.html', {'form': form})
-
-
-def send_newsletter_email(name, email):
-    subject = 'Welcome to our newsletter!'
-    message = f'Hi {name},\n\nThank you for subscribing to our newsletter!'
-    from_email = settings.DEFAULT_FROM_EMAIL
-    recipient_list = [email]
-    send_mail(subject, message, from_email, recipient_list)
+        form = EmailForm()
+    return render(request, 'newsletter/email_form.html', {'form': form})
