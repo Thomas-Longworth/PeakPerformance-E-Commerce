@@ -2,17 +2,10 @@
 {% load static %}
 {% block content %}
 
-
-<div class="container">
-
-</div>
-
-
-
 <div class=container-fluid>
     <div class="row">
         {% for product in products %}
-        <div class="col-3">
+        <div class="col-3 border">
             <div><img src="{{ product.featured_image.url }}" alt="Girl in a jacket" width="150" height="150"></div>
             <div>{{ product.category }}</div>
             <div>{{ product.name }}</div>
