@@ -1,9 +1,10 @@
 from django.db import models
 from cloudinary.models import CloudinaryField
 
+
 class Category(models.Model):
     class Meta:
-        verbose_name_plural='Categories'
+        verbose_name_plural = 'Categories'
 
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
@@ -22,8 +23,7 @@ class Product(models.Model):
     name = models.CharField(max_length=254)
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    rating = models.DecimalField(max_digits=6, decimal_places=2, null=True,
-                                 blank=True)
+
     featured_image = CloudinaryField('image', default='placeholder')
 
     def __str__(self):
