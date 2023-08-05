@@ -4,70 +4,42 @@
 <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 
-<div class=container-fluid>
-    <div class="row">
+
+<div id="product_board" class="container">
+    <div class="row clearfix">
         {% for product in products %}
-        <div class="col-3 border">
-            <div><img src="{{ product.featured_image.url }}" alt="Girl in a jacket" width="150" height="150"></div>
-            <div>{{ product.category }}</div>
-            <div>{{ product.name }}</div>
-            <div>{{ product.description}}</div>
-            <div>{{ product.price}}</div>
-            <a>test</a>
-            <a class="button" class="button" href="{% url 'product_detail' product.id %}">View Product</a>
-            {% if request.user.is_superuser %}
+        <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card product_item">
+                <div class="body">
+                    <div class="cp_img">
+                        <img src="{{ product.featured_image.url }}" alt="Product" class="img-fluid">
+                        <div class="hover">
+                            <a href="{% url 'product_detail' product.id %}" class="btn btn-primary
+                                btn-sm waves-effect">View Product</a>
 
-            <a href="{% url 'edit_product' product.id %}">Edit</a>
-            <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
-            {% endif %}
-
-
-        </div>
-
-
-
-
-        {% endfor %}
-    </div>
-
-
-
-    <div class="container">
-        <div class="row clearfix">
-            {% for product in products %}
-            <div class="col-lg-3 col-md-4 col-sm-12">
-                <div class="card product_item">
-                    <div class="body">
-                        <div class="cp_img">
-                            <img src="{{ product.featured_image.url }}" alt="Product" class="img-fluid">
-                            <div class="hover">
-                                <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i
-                                        class="zmdi zmdi-plus"></i></a>
-                                <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i
-                                        class="zmdi zmdi-shopping-cart"></i></a>
-                            </div>
                         </div>
+                    </div>
 
-                        <div class="product_details">
-                            <h5><a href="ec-product-detail.html">Simple Black Clock</a></h5>
-                            <ul class="product_price list-unstyled">
-                                <li class="old_price">$ {{product.price}}</li>
+                    <div class="product_details">
+                        <h5><a href="ec-product-detail.html">Simple Black Clock</a></h5>
+                        <ul class="product_price list-unstyled">
+                            <li class="old_price">$ {{product.price}}</li>
 
-                            </ul>
+                        </ul>
 
-                            {% if request.user.is_superuser %}
-                            <ul class="product_price list-unstyled">
-                                <li class="new_price"><a href="{% url 'edit_product' product.id %}">Edit</a></li>
-                                <li class="old_price"><a class="text-danger"
-                                        href="{% url 'delete_product' product.id %}">Delete</a></li>
-                            </ul>
-                            {% endif %}
-                        </div>
+                        {% if request.user.is_superuser %}
+                        <ul class="product_price list-unstyled">
+                            <li class="new_price"><a href="{% url 'edit_product' product.id %}">Edit</a></li>
+                            <li class="old_price"><a class="text-danger"
+                                    href="{% url 'delete_product' product.id %}">Delete</a></li>
+                        </ul>
+                        {% endif %}
                     </div>
                 </div>
             </div>
-            {% endfor %}
         </div>
+        {% endfor %}
     </div>
+</div>
 
-    {% endblock %}
+{% endblock %}
