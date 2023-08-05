@@ -6,7 +6,8 @@
     <h1>Help us improve our customer experience</h1>
     <form method="POST" action="">
         {% csrf_token %}
-        {{ form.as_p }}
+        {{ form|crispy }}
+
 
 
 
