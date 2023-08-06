@@ -3,7 +3,7 @@
 ------------------------------------
 <br>
 
-![alt text](static/images/response.JPG)
+![alt text](static/images/gym.JPG)
 
 <br>
 
@@ -33,17 +33,9 @@
 
 <br>
 
-[SpendWise](https://expense-tracker-101.herokuapp.com/)
+[PeakPerformance]()
 
-SpendWise is a website designed to help users track their spending and stay within their budget. With this app, users can easily add expenses as they occur, and the app will automatically calculate the total amount spent.
-
-The user can also set an initial budget and the app will automatically deduct your expenses from your budget, giving the user an up-to-date picture of their spending.
-
-To use the app, users start by specifying an initial budget. They can then add expenses by entering the amount spent, along with a description of the expense. The app will subtract the total amount of the expenses from the total budget, so users can easily see how much they have left to spend.
-
-The app is designed to be user-friendly, with a simple interface that makes it easy to enter and track expenses.
-
-Overall, the expenses tracker app is a useful tool for anyone who wants to stay on top of their finances and make sure they are staying within their budget.
+Welcome to Peak Performance, your one-stop destination for all things fitness! Our gym website is dedicated to helping you reach the pinnacle of your fitness journey. Explore our extensive range of premium nutritional products, carefully curated to fuel your body and optimize performance. Elevate your workouts with top-notch gym equipment designed to push your limits and achieve your goals. Show off your style and dedication with our stylish and comfortable apparel, perfect for both in and out of the gym. Whether you're a seasoned fitness enthusiast or just starting, Peak Performance is here to support you every step of the way, ensuring you reach new heights in your fitness endeavors. Unleash your true potential with us!
 
 <br>
 
