@@ -1,5 +1,6 @@
 from django.db import models
 from products.models import Category, Product
+from datetime import datetime, date
 
 
 class UserFeedback(models.Model):
@@ -10,6 +11,8 @@ class UserFeedback(models.Model):
 
     product = models.ForeignKey(Product, null=True, blank=True,
                                 on_delete=models.SET_NULL)
+
+    today_date = models.DateField(default=date.today)
 
     RATING_CHOICES = [
         (1, '1 - Very Poor'),
@@ -27,3 +30,8 @@ class UserFeedback(models.Model):
     rating = models.IntegerField(choices=RATING_CHOICES, default=5)
 
     description = models.TextField()
+
+    purchase_date = models.DateField(default=date.today)
+
+    def __str__(self):
+        return self.name

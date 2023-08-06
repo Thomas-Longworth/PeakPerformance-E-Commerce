@@ -5,4 +5,5 @@ from .models import UserFeedback
 class feedbackForm(forms.ModelForm):
     class Meta:
         model = UserFeedback
-        fields = ['name', 'category', 'product', 'rating', 'description']
+        fields = ['name', 'today_date', 'category', 'product',
+                  'rating', 'purchase_date', 'description']
