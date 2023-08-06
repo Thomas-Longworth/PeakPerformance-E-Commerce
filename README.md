@@ -3,7 +3,7 @@
 ------------------------------------
 <br>
 
-![alt text](static/images/gym.JPG)
+![alt text](static/images/gym.jpg)
 
 <br>
 
