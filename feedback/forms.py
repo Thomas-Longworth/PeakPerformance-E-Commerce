@@ -11,7 +11,7 @@ class DateInput(forms.DateInput):
 class feedbackForm(forms.ModelForm):
     class Meta:
         model = UserFeedback
-        fields = ['name', 'made_on', 'category', 'product',
+        fields = ['name', 'made_on', 'product',
                   'rating', 'description']
         widgets = {
             'made_on': DateInput(),

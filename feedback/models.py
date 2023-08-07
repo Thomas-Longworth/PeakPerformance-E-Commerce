@@ -1,13 +1,10 @@
 from django.db import models
-from products.models import Category, Product
+from products.models import Product
 from datetime import datetime, date
 
 
 class UserFeedback(models.Model):
     name = models.CharField(max_length=254)
-
-    category = models.ForeignKey(Category, null=True, blank=True,
-                                 on_delete=models.SET_NULL)
 
     product = models.ForeignKey(Product, null=True, blank=True,
                                 on_delete=models.SET_NULL)
@@ -29,7 +26,7 @@ class UserFeedback(models.Model):
 
     rating = models.IntegerField(choices=RATING_CHOICES, default=5)
 
-    description = models.TextField()
+    description = models.CharField(max_length=254)
 
     def __str__(self):
         return self.name
