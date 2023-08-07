@@ -24,4 +24,9 @@ def request_view(request):
 
 
 def site_refunds(request):
-    return render(request, 'refunds/refund_admin.html')
+    refunds = Refund.objects.all()
+    context = {
+        'refunds': refunds
+    }
+
+    return render(request, 'refunds/refund_admin.html', context)

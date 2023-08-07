@@ -9,9 +9,6 @@ class Refund(models.Model):
 
     name = models.CharField(max_length=254)
 
-    category = models.ForeignKey(Category, null=True, blank=True,
-                                 on_delete=models.SET_NULL)
-
     product = models.ForeignKey(Product, null=True, blank=True,
                                 on_delete=models.SET_NULL)
 

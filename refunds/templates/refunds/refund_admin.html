@@ -3,12 +3,40 @@
 {% block content %}
 
 
+<div class="container mt-5 px-2">
+    <div class="mb-2 d-flex justify-content-between align-items-center">
+        <h1>Customer Refunds</h1>
+    </div>
+    <br>
+    <div class="table-responsive">
+        <table class="table table-responsive table border">
+            <thead>
+                <tr class="bg-light">
+                    <th scope="col" width="15%">Customer</th>
+                    <th scope="col" width="10%">Order Number</th>
+                    <th scope="col" width="20%">Product</th>
+                    <th scope="col" width="10%">Image</th>
+                    <th scope="col" width="15%">Reason</th>
+                    <th scope="col" width="30%">Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for refund in refunds %}
+                <tr>
+                    <td>{{refund.name}}</td>
+                    <td>{{refund.orderkey}}</td>
+                    <td>{{refund.product}}</td>
+                    <td><img src="{{ refund.product.featured_image.url }}" alt="Product" width="50"></td>
+                    <td>{{refund.reason}}</td>
+                    <td>{{refund.explaination}}</td>
+                </tr>
+                {% endfor %}
 
-<div class="container">
-
+            </tbody>
+        </table>
+    </div>
 
 </div>
-
 
 
 {{feed.name}}
