@@ -29,4 +29,5 @@ urlpatterns = [
     path('profile/', include('profiles.urls')),
     path('newsletter/', include('newsletter.urls')),
     path('feedback/', include('feedback.urls')),
+    path('refunds/', include('refunds.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
