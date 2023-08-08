@@ -2,10 +2,12 @@
 {% load static %}
 
 
-
+{% block content %}
 <h1>Enter your email to receive an email</h1>
 <form method="post">
     {% csrf_token %}
     {{ form }}
     <input type="submit" value="Send Email">
 </form>
+
+{% endblock %}
