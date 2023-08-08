@@ -2,14 +2,15 @@
 {% load static %}
 
 {% block content %}
-<div class=container-fluid>
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+<div class=container>
     <div class="row">
 
         <div class="col-3">
             <div><img src="{{ product.featured_image.url }}" alt="Girl in a jacket" width="150" height="150"></div>
-            <div>{{ product.category }}</div>
-            <div>{{ product.name }}</div>
-            <div>{{ product.description}}</div>
+
+            <div>{{ prouct.name }}</div>
             <div>{{ product.price}}</div>
             <div class="container">
                 <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
