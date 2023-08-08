@@ -11,6 +11,8 @@
     {% endblock %}
 
     {% block corecss %}
+    <link rel="stylesheet" href="{% static 'css/checkout.css' %}">
+
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <script src="https://js.stripe.com/v3/"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -137,6 +139,7 @@
     <script type="text/javascript">
         $('.toast').toast('show');
     </script>
+
 
 </body>
 
