@@ -123,19 +123,32 @@ I wrote these users stories and used Github projects feature to track them
 <br>
 
 - Epic 1: User Register
-  - Sign-up - As a site user I can sign-up so that I use the website
-  - User Login - As a site user I can login into my account so that use the website
-  - User Logout - As a site user I can logout of my account so that stop using website features
+  
 
 <br>
 
-- Epic 2: Expenses CRUD
-  - See expenses - As a site user I can see my expenses that were added so that track my spending
-  - Add expenses - As a site user I add new expenses so that I can keep track of all expenses
-  - Update expenses - As a site user I can edit an expense so that I make changes to my expenses
-  - Delete expenses - As a site user I can delete an expense so that I delete an expense that I dont want
+- Epic 2: Cart Fuctionality
+  
 
 <br>
+
+- Epic 1: Feedback
+  
+
+<br>
+
+
+- Epic 2: Refunds
+  
+
+
+<br>
+
+
+- Epic 2: Email newsletter
+
+<br>
+  
 
 ![alt text](static/images/userboard.JPG)
 
