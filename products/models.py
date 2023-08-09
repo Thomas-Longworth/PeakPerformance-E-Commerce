@@ -1,6 +1,12 @@
 from django.db import models
 from cloudinary.models import CloudinaryField
 
+from django.db import models
+from profiles.models import UserProfile
+from django.forms import ModelForm
+
+from datetime import datetime, date
+
 
 class Category(models.Model):
     class Meta:
@@ -30,3 +36,12 @@ class Product(models.Model):
         return self.name
 
 
+class Question(models.Model):
+  
+    question = models.CharField(
+        max_length=254, default='Ask your question here')
+
+    date_on = models.DateField(default=date.today)
+
+    def __str__(self):
+        return self.question

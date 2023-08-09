@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from .models import Product, Category
+from .models import Product, Category, Question
 from django.db.models import Q
-from .forms import ProductForm
+from .forms import ProductForm, QuestionForm
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 # Create your views here.
@@ -21,9 +21,20 @@ def all_products(request):
                 description__icontains=query)
             products = products.filter(queries)
 
+    if request.method == "POST":
+        form = QuestionForm(request.POST)
+        form.save()
+        messages.success(request, f'Thanks for submitting a question')
+        return redirect(reverse('products'))
+
+    form = QuestionForm()
+    questions = Question.objects.all()
+
     context = {
         'products': products,
         'search_term': query,
+        'form': form,
+        'questions': questions,
     }
     return render(request, 'products/products.html', context)
 

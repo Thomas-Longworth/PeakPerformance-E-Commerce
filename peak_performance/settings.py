@@ -58,7 +58,8 @@ INSTALLED_APPS = [
     'profiles',
     'newsletter',
     'feedback',
-    'refunds'
+    'refunds',
+   
 
 ]
 

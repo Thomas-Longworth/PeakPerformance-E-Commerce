@@ -41,5 +41,34 @@
         {% endfor %}
     </div>
 </div>
+<div class="container">
+    <table class="table border">
+        <thead>
+            <tr>
+                <th scope="col">Customer</th>
+                <th scope="col">Date</th>
+                <th scope="col">Question</th>
+            </tr>
+        </thead>
+        {% for question in questions %}
+        <tbody>
+            <tr>
+                <th scope="row">{{user}}</th>
+                <td>{{question.date_on}}</td>
+                <td>{{question.question}}</td>
+            </tr>
+        </tbody>
+        {% endfor %}
+        <tr>
+            <td>
+                <form method="POST" action="">
+                    {% csrf_token %}
+                    {{form}}
+                    <button type="submit">Submit Question</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+</div>
 
 {% endblock %}
