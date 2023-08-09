@@ -30,3 +30,4 @@ admin.site.register(Category, CategoryAdmin)
 
 # Register your models here.
 admin.site.register(Question)
+ 

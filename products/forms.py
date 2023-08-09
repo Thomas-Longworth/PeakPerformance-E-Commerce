@@ -28,7 +28,7 @@ class DateInput(forms.DateInput):
 class QuestionForm(forms.ModelForm):
     class Meta:
         model = Question
-        fields = ['date_on', 'question']
+        fields = ['question','date_on']
         widgets = {
             'date_on': DateInput(),
         }

@@ -4,6 +4,7 @@ from cloudinary.models import CloudinaryField
 from django.db import models
 from profiles.models import UserProfile
 from django.forms import ModelForm
+from django.contrib.auth.models import User
 
 from datetime import datetime, date
 
@@ -37,7 +38,8 @@ class Product(models.Model):
 
 
 class Question(models.Model):
-  
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+
     question = models.CharField(
         max_length=254, default='Ask your question here')
 
@@ -45,3 +47,5 @@ class Question(models.Model):
 
     def __str__(self):
         return self.question
+
+

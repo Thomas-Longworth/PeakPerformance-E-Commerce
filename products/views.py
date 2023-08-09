@@ -8,6 +8,7 @@ from django.contrib.auth.decorators import login_required
 
 
 def all_products(request):
+
     products = Product.objects.all()
     query = None
     if request.GET:
@@ -22,7 +23,10 @@ def all_products(request):
             products = products.filter(queries)
 
     if request.method == "POST":
+
         form = QuestionForm(request.POST)
+        form.instance.user = request.user
+
         form.save()
         messages.success(request, f'Thanks for submitting a question')
         return redirect(reverse('products'))
