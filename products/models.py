@@ -40,12 +40,9 @@ class Product(models.Model):
 class Question(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
-    question = models.CharField(
-        max_length=254, default='Ask your question here')
+    question = models.CharField(max_length=254)
 
     date_on = models.DateField(default=date.today)
 
     def __str__(self):
         return self.question
-
-

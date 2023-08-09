@@ -1,5 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+
 body {
     margin-top: 20px;
+    color: red;
+}
+
+.main_title {
+    padding: 5px;
+    text-align: center;
+
+
+
 }
 
 #product_board {
@@ -366,4 +377,56 @@ body {
     color: #424242;
     padding: 20px;
     font-weight: 400;
+}
+
+
+
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+ul>li {
+    padding: 4px;
+    color: #C5CAE9;
+}
+
+ul>li:hover {
+    color: #957bda;
+    cursor: pointer
+}
+
+hr {
+    border-width: 3px
+}
+
+.card {
+    padding: 2% 7%
+}
+
+.social>i {
+    padding: 1%;
+    font-size: 15px
+}
+
+.social>i:hover {
+    color: #957bda;
+    cursor: pointer
+}
+
+.policy>div {
+    padding: 4px
+}
+
+.heading {
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+}
+
+.divider {
+    border-top: 2px solid
 }

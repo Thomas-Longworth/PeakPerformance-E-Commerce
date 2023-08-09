@@ -8,7 +8,7 @@ from django.contrib.auth.decorators import login_required
 
 
 def all_products(request):
-
+    categories = Category.objects.all()
     products = Product.objects.all()
     query = None
     if request.GET:
@@ -39,6 +39,7 @@ def all_products(request):
         'search_term': query,
         'form': form,
         'questions': questions,
+        'categories':categories,
     }
     return render(request, 'products/products.html', context)
 
