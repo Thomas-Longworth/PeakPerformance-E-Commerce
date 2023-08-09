@@ -4,6 +4,7 @@
 <html lang="en">
 
 <head>
+    <script src="https://kit.fontawesome.com/0655c4e462.js" crossorigin="anonymous"></script>
     {% block meta %}
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
@@ -11,6 +12,7 @@
     {% endblock %}
 
     {% block corecss %}
+    <script src="https://kit.fontawesome.com/0655c4e462.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{% static 'css/checkout.css' %}">
 
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
@@ -37,7 +39,7 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item ">
                     <a class="nav-link" href='/'>Home <span class="sr-only">(current)</span></a>
                 </li>
 
@@ -80,15 +82,38 @@
                 {% endif %}
                 {% if request.user.is_authenticated %}
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'view_bag' %}">Cart</a>
+                    <a class="nav-link" href="{% url 'view_bag' %}"><i class="fa-regular fa-cart-shopping"></i></a>
                 </li>
                 {% endif %}
+
             </ul>
-            <h4>Welcome, {{user}}</h4>
-            <form class="form-inline my-2 my-lg-0" method="GET" action="{% url 'products' %}">
-                <input type="text" name="q" class="form-control mr-sm-2" placeholder="Search Site" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+
+            {% if request.user.is_authenticated %}
+            <span class="navbar-text text-light">
+                <p>{{user}}</p>
+
+            </span>
+            <span class="navbar-text">
+
+                <a class="nav-link" href="{% url 'view_bag' %}"><i class="fa-regular fa-cart-shopping"></i></a>
+
+            </span>
+            {% else %}
+
+            <span class="navbar-text">
+                <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+
+            </span>
+            <span class="navbar-text">
+                <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
+
+            </span>
+            {% endif %}
+
+
+
+
+
         </div>
     </nav>
 
@@ -142,14 +167,14 @@
     {% block footer %}
 
     <div class="container-fluid mt-5 bg-dark ">
-        <div class="card  mx-5 bg-dark">
+        <div class="cardfoot  mx-5 bg-dark">
             <div class="row mb-4 bg-dark ">
                 <div class="col-md-4 col-sm-4 col-xs-4 bg-dark ">
                     <div class="footer-text pull-left bg-dark">
                         <div class="d-flex text-light">
                             <h1>PeakPerformance</h1>
                         </div>
-                        <p class="card-text ">Empowering Fitness Journeys, One Product at a Time</p>
+                        <p class="card-text text-light">Empowering Fitness Journeys, One Product at a Time</p>
                         <div class="social mt-2 mb-3"> <i class="fa fa-facebook-official fa-lg"></i> <i
                                 class="fa fa-instagram fa-lg"></i> <i class="fa fa-twitter fa-lg"></i> <i
                                 class="fa fa-linkedin-square fa-lg"></i> <i class="fa fa-facebook"></i> </div>
@@ -157,26 +182,26 @@
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-2"></div>
                 <div class="col-md-2 col-sm-2 col-xs-2 bg-dark .text-light">
-                    <h5 class="heading">Navagation</h5>
-                    <ul>
+                    <h5 class="heading text-light">Navagation</h5>
+                    <ul class="text-light">
                         <li>Home</li>
                         <li>Products</li>
                         <li>Account</li>
 
                     </ul>
                 </div>
-                <div class="col-md-2 col-sm-2 col-xs-2 bg-dark .text-light">
+                <div class="col-md-2 col-sm-2 col-xs-2 bg-dark text-light">
                     <h5 class="heading">Social media</h5>
-                    <ul class="card-text">
+                    <ul class="card-text text-light">
                         <li>Facebook</li>
                         <li>Twitter</li>
                         <li>Instagram</li>
 
                     </ul>
                 </div>
-                <div class="col-md-2 col-sm-2 col-xs-2 bg-dark .text-light">
+                <div class="col-md-2 col-sm-2 col-xs-2 bg-dark text-light">
                     <h5 class="heading">Contack US</h5>
-                    <ul class="card-text">
+                    <ul class="card-text text-light">
                         <li>Feedback</li>
                         <li>Refunds/li>
                         <li>Q/A</li>
@@ -189,12 +214,6 @@
     </div>
 
     {% endblock %}
-
-
-
-
-
-
 
     {% block postloadjs %}
     {% endblock %}
