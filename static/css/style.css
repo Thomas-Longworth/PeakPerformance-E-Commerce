@@ -15,8 +15,10 @@ body {
     text-align: center;
     justify-content: center;
 
+}
 
-
+.hider {
+    display: none;
 }
 
 #product_board {
