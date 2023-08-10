@@ -3,13 +3,14 @@
 {% block content %}
 <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-
-<div class="main_title">
-    <h1>All Products</h1>
-    <form class="form-inline my-2 my-lg-0" method="GET" action="{% url 'products' %}">
-        <input type="text" name="q" class="form-control mr-sm-2" placeholder="Search Site" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+<div class="header_div">
+    <div class="main_title">
+        <h1>All Products</h1>
+        <form class="form-inline my-2 my-lg-0" method="GET" action="{% url 'products' %}">
+            <input type="text" name="q" class="form-control mr-sm-2" placeholder="Search Site" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
 </div>
 <div id="product_board" class="container">
     <div class="row clearfix">

@@ -40,6 +40,8 @@ def adjust_bag(request, item_id):
 
     if request.method == "POST":
         bag.pop(item_id)
+        messages.success(
+            request, f'Sucessfully removed to your bag')
 
     request.session['bag'] = bag
     return redirect('view_bag')
@@ -50,16 +52,12 @@ def remove_from_bag(request, item_id):
 
     try:
         size = None
-        if 'product_size' in request.POST:
-            size = request.POST['product_size']
+
         bag = request.session.get('bag', {})
 
-        if size:
-            del bag[item_id]['items_by_size'][size]
-            if not bag[item_id]['items_by_size']:
-                bag.pop(item_id)
-        else:
-            bag.pop(item_id)
+        bag.pop(item_id)
+        messages.success(
+            request, f'Sucessfully removed {product.name} to your bag')
 
         request.session['bag'] = bag
         return HttpResponse(status=200)

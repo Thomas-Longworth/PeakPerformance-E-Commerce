@@ -5,9 +5,15 @@ body {
     color: red;
 }
 
+.header_div {
+    display: flex;
+    justify-content: center;
+}
+
 .main_title {
     padding: 5px;
     text-align: center;
+    justify-content: center;
 
 
 
