@@ -17,8 +17,13 @@ body {
 
 }
 
-.hider {
-    display: none;
+
+input[type="number"] {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0;
+    /* Add other styling properties as needed */
 }
 
 #product_board {
