@@ -29,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     '8000-thomas-longworth-peakper-uphedgsn5e.us2.codeanyapp.com', 'peak-perfomance-2c33a326e9fb.herokuapp.com', 'localhost']
@@ -197,7 +197,8 @@ STRIPE_CURRENCY = 'usd'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 
-MAILCHIMP_API_KEY = '420e3031c445518f0806ed58d3c7bd8f-us13'
+
+MAILCHIMP_API_KEY = os.getenv('MAIL_KEY')
 
 
 MAILCHIMP_DATA_CENTER = "us13"
