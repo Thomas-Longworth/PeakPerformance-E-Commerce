@@ -466,11 +466,14 @@ I deployed my project to Herou using the following steps:
 
 <br>
 
-- The images used on the website pexels.com, freely available images.
-- The footer social media Icons were generated from font awesome and I took inspiration from Code Institutes love running project.
-
+- The images were downloaded from the website pexels.com and I-stock.com
+- The footer social media Icons were generated from font awesome
+- The base template for the project was used from Code Institutes "Boutique-ado" walktrough.
 - I used Code institute's walthrough projects "Hello Django" and "I think, therefore I blog" to learn the Django fundamentals
 
 <br>
 
 -------------
+seo
+
+I researched keywords for high voloume with little 
