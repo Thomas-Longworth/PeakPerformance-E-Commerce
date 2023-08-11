@@ -59,7 +59,9 @@ INSTALLED_APPS = [
     'newsletter',
     'feedback',
     'refunds',
-   
+
+    'mailchimp_marketing',
+
 
 ]
 
@@ -195,13 +197,8 @@ STRIPE_CURRENCY = 'usd'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 
-if 'DEVELOPMENT' in os.environ:
-    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    DEFAULT_FROM_EMAIL = 'jim004342@gmail.com'
-else:
-    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-    EMAIL_USE_TLS = True
-    EMAIL_PORT = 587
-    EMAIL_HOST = 'smtp.gmail.com'
-    EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-    EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
+MAILCHIMP_API_KEY = '420e3031c445518f0806ed58d3c7bd8f-us13'
+
+
+MAILCHIMP_DATA_CENTER = "us13"
+MAILCHIMP_EMAIL_LIST_ID = "31c4a56e1e."
