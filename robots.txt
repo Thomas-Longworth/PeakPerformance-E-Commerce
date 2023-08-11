@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /admin/
+Disallow: /profiles/
+Disallow: /checkout/
+Disallow: /bag/
+Sitemap: https://peak-perfomance-2c33a326e9fb.herokuapp.com/sitemap.xml
