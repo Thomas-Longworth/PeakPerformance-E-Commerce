@@ -477,3 +477,6 @@ I deployed my project to Herou using the following steps:
 seo
 
 I researched keywords for high voloume with little 
+i add decriptive tages for the images
+I tried include keywords in the projects html elements alos
+I changed the image file name to be more descriptive
