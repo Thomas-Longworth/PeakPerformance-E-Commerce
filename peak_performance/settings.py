@@ -60,7 +60,7 @@ INSTALLED_APPS = [
     'feedback',
     'refunds',
 
-    'mailchimp_marketing',
+   
 
 
 ]
@@ -196,10 +196,3 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'usd'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
-
-
-MAILCHIMP_API_KEY = os.getenv('MAIL_KEY')
-
-
-MAILCHIMP_DATA_CENTER = "us13"
-MAILCHIMP_EMAIL_LIST_ID = "31c4a56e1e."

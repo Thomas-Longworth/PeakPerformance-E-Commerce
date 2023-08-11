@@ -5,6 +5,14 @@ body {
     color: red;
 }
 
+#mc_embed_signup {
+    background: #fff;
+    false;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    width: 600px;
+}
+
 .header_div {
     display: flex;
     justify-content: center;
