@@ -47,7 +47,7 @@ Welcome to Peak Performance, your one-stop destination for all things fitness! O
 
 E-Commerce Model
 
-EliteTechPC is an e-commerce platform that specializes in selling high-quality prebuilt PCs to consumers. Our mission is to provide customers with the top-of-the-line computer systems that deliver exceptional performance, reliability and value. Target market includes both gaming enthusiasts and professionals in need of high-performance machines. We cater to individuals who value superior hardware components, seamless functionality and latest advancements in technology. This is a Business to Consumer model and it is catered to be as simple yet intuitive for the consumer along with the sign-ups to the newsletter with potential deals and more.
+EliteTechPC is an e-commerce platform that specializes in selling gym/nutto consumers. Our mission is to provide customers with the top-of-the-line computer systems that deliver exceptional performance, reliability and value. Target market includes both gaming enthusiasts and professionals in need of high-performance machines. We cater to individuals who value superior hardware components, seamless functionality and latest advancements in technology. This is a Business to Consumer model and it is catered to be as simple yet intuitive for the consumer along with the sign-ups to the newsletter with potential deals and more.
 
 
 <br>
@@ -141,80 +141,250 @@ I charted out my user stories onto the GitHub project board for my website. I es
 
 ---
 
-### User Stories
+## User Stories
 
 <br>
 
+I brainstormed User Stories for my website and used the Github projects feature to track them
+
+I add two labels for the user stories which are "must have" and "could have"
+
+![alt text](static/images/userstories.JPG)
+
 <br>
 
-I brainstormed these User Stories and used Github projects feature to track them
-
-
-<br>
-
-- Epic 1: User Authentication
+### Epic 1: User Authentication
   
 <br>
-User story: User Register
+
+#### User story: User Register
 
 As a Site user I can register an account for the website so that I can use the websites main features
 
-Acceptance Criteria
+#### Acceptance Criteria
 
 - User can register an account with username and password.
 - Redirected to home page
 
-<br>
 
-User story: User Login
+
+---
+
+#### User story: User Login
 
 As a User I can login in to my account so that I can view profile and purchase products
 
-Acceptance Criteria
-User can login and see their name in navbar
+#### Acceptance Criteria
 
-<br>
+- User can login and see their name in navbar
 
-User story: User logout
+---
+
+#### User story: User logout
 
 As a Site User I can logout of my account so that I can stop using website features
 
-Acceptance Criteria
+#### Acceptance Criteria
 
 - User can logout. No longer can view profile page.
 
-<br>
-
-
-
-
+---
 
 <br>
 
-- Epic 2: Cart Fuctionality
+### **Epic 2: Products**
+
+<br>
+
+#### User story: Product display
+
+
+As a Site owner I can a display a list of the stores producta  so that a the customer can see them
+
+
+#### Acceptance Criteria
+
+- Products page contains all the product cards
+
+---
+
+
+
+#### User story: Product Search
+
+As a Site User I can use a search bar for the website products so that find a product quickly
+
+#### Acceptance Criteria
+
+- User can find a product by typing words that correspond to its name or description
+
+---
+
+
+#### User story: Add new Product
+
+As a Admin I can add a new product so that I can increase the stores stock
+
+#### Acceptance Criteria
+
+- A form page for admin to add a new product to the store
+
+---
+
+
+#### User story: Edit product
+
+As a Site owner I can edit an existing product so that I update it for the store
+
+#### Acceptance Criteria
+
+- Admin can edit the product with a button on the products page
+
+---
+
+
+
+#### User story: Remove product
+
+As a Site owner I can delete a product so that I can remove unneeded stock
+
+#### Acceptance Criteria
+ 
+- Admin can delete a product from the product page
+
+---
+
+<br>
+
+### **Epic 3: Cart Fuctionality**
   
 
 <br>
 
-- Epic 3: Contact
+
+#### User story: Add to cart
+As a Site User I can add a product to the cart so that proceed to purchasing it
+
+
+#### Acceptance Criteria
+Form available to add product to bag
+User can change quantity in the form
+
+---
+
+
+
+#### User story: Remove from cart
+As a Site User I can remove a product from cart so that I can change my order
+
+#### Acceptance Criteria
+
+- In cart page, User has button to remove particular product from cart.
+
+---
+
+<br>
+
+### **Epic 4: Contact**
+
+<br>
+
+#### User story: Admin Q&A
+
+As a Site Owner I can answer the customers questions form** so that I give them the required info
+
+#### Acceptance Criteria
+
+- Site owner can submit an answer with front end form
+
+
+---
+
+#### User story: Customer Q&A
+
+As a Site user I can ask and view questions about the products so that get better understanding of the products
+
+#### Acceptance Criteria
+
+- User can view a list of questions.
+
+- User can submit a new question
+
+---
+
+#### User story: Customer feedback
+As a Site user I can submit a feedback form so that I can review the website and its product
+
+#### Acceptance Criteria
+
+- User can submit a form including the Product and its category
+
+---
+
+#### User story: View feedback
+
+As a Site owner I can view customers feedback forms so that I can learn ways to improve the website
+
+#### Acceptance Criteria
+
+- Site owner can view a feedback page with the submitted forms from customers
+
+---
+
+#### User story: Request Refund
+
+As a Site user I can submit a refund form so that I can get my money back if product is not up to standard
+
+#### Acceptance Criteria
+
+- User can submit a request form with their order number
+
+---
+
+#### User story: Refund page
+
+As a Site owner I can view a page with all the refund requests so that begin processing refunds
+
+#### Acceptance Criteria
+
+- Owner can view a page with a table of the refunds
+
+
+---
+
+#### User story: Newsletter
+
+As a Site user I can sign up to the websites newsletter so that I can receive the latest offers and news
+
+#### Acceptance Criteria
+
+- Site user can submit their email in a frontend form
+
+---
+
+<br>
+
+### Epic 5: **Checkout**
+
+<br>
+
+#### User story : Stripe/Checkout
+
+As a Site user I can checkout my products so that I can pay and receive my products
+
+#### Acceptance Criteria
+
+- User can fill out their profile and card details.
   
+- Stripe handles payment
+
+---
 
 <br>
 
 
-- Epic 4: Stripe
-  
 
 
-<br>
-
-
--
-
-<br>
-  
-
-![alt text](static/images/userboard.JPG)
 
 <br>
 
