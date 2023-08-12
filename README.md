@@ -88,7 +88,7 @@ The app is designed to have a natural flow, with the main focus on basic crud fu
 
 <br>
 
-I used Balsamiq to build wireframes for the website before I began developement. I decided on a relatively simple design so I could focus more on the backend of the project.
+I used Balsamiq to build wireframes for the website before I began developement.
 
 <br>
 
@@ -98,19 +98,26 @@ I used Balsamiq to build wireframes for the website before I began developement.
 
 <br>
 
-![alt text](static/images/homewire.JPG)
+![alt text](static/images/wireframe1.png)
 
 <br>
+
+- Wireframe for the products page
+
+<br>
+
+![alt text](static/images/wireframe2.png)
+
 
 -------------
 
 <br>
 
-- Wireframe for the Expenses page
+- Wireframe for the product detail page
 
 <br>
 
-![alt text](static/images/expensewire.JPG)
+![alt text](static/images/wireframe2.png)
 
 <br>
 
