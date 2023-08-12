@@ -1,0 +1,568 @@
+## Testing
+
+## Table of Contents
+
+--------------------------------------
+
+<br>
+
+- [Testing Strategy](#testing-strategy)
+- [User story testing](#user-story-testing)
+- [Validator Testing](#validator-testing)
+- [Manual Testing](#manual-testing)
+- [Bugs](#bugs)
+
+------
+
+<br>
+
+## Testing Strategy
+
+<br>
+
+I decided on a manual testing strategy for the development of the site. I did this to ensure the website is user-friendly and check issues with navigation, layout, and usability that may not be apparent through automated testing.
+
+<br>
+
+------------
+
+<br>
+
+<br>
+
+## User Story Testing
+
+<br>
+
+### Epic 1: User Authentication
+  
+<br>
+
+#### User story: User Register
+
+>As a Site user I can register an account for the website so that I can use the websites main features
+
+#### Acceptance Criteria
+
+- User can register an account with username and password.
+- Redirected to home page
+
+### **All tests passed**    [x]
+
+---
+
+#### User story: User Lo>gin
+
+>As a User I can login in to my account so that I can view profile and purchase products
+
+#### Acceptance Criteria
+
+- User can login and see their name in navbar
+
+### **All tests passed**    [x]
+
+---
+
+#### User story: User logout
+
+>As a Site User I can logout of my account so that I can stop using website features
+
+#### Acceptance Criteria
+
+- User can logout. No longer can view profile page.
+
+
+### **All tests passed**    [x]
+
+---
+
+<br>
+
+### **Epic 2: Products**
+
+<br>
+
+#### User story: Product display
+
+>As a Site owner I can a display a list of the stores producta  so that a the customer can see them
+
+#### Acceptance Criteria
+
+- Products page contains all the product cards
+  
+### **All tests passed**    [x]
+
+---
+
+#### User story: Product Search
+
+
+>As a Site User I can use a search bar for the website products so that find a product quickly
+
+#### Acceptance Criteria
+
+- User can find a product by typing words that correspond to its name or description
+
+### **All tests passed**    [x]
+
+---
+
+#### User story: Add new Product
+
+>As a Admin I can add a new product so that I can increase the stores stock
+
+#### Acceptance Criteria
+
+- A form page for admin to add a new product to the store
+
+### **All tests passed**    [x]
+
+---
+
+#### User story: Edit product
+
+>As a Site owner I can edit an existing product so that I update it for the store
+
+#### Acceptance Criteria
+
+- Admin can edit the product with a button on the products page
+
+### **All tests passed**    [x]
+
+
+---
+
+#### User story: Remove product
+
+>As a Site owner I can delete a product so that I can remove unneeded stock
+
+#### Acceptance Criteria
+
+- Admin can delete a product from the product page
+
+### **All tests passed**    [x]
+
+---
+
+<br>
+
+### **Epic 3: Cart Fuctionality**
+  
+<br>
+
+#### User story: Add to cart
+
+>As a Site User I can add a product to the cart so that proceed to purchasing it
+
+#### Acceptance Criteria
+
+Form available to add product to bag
+User can change quantity in the form
+
+### **All tests passed**    [x]
+
+---
+
+#### User story: Remove from cart
+
+>As a Site User I can remove a product from cart so that I can change my order
+
+#### Acceptance Criteria
+
+- In cart page, User has button to remove particular product from cart.
+
+---
+
+<br>
+
+### **Epic 4: Contact**
+
+<br>
+
+#### User story: Admin Q&A
+
+>As a Site Owner I can answer the customers questions form** so that I give them the required info
+
+#### Acceptance Criteria
+
+- Site owner can submit an answer with front end form
+
+---
+
+#### User story: Customer Q&A
+
+>As a Site user I can ask and view questions about the products so that get better understanding of the products
+
+#### Acceptance Criteria
+
+- User can view a list of questions.
+
+- User can submit a new question
+
+---
+
+#### User story: Customer feedback
+
+>As a Site user I can submit a feedback form so that I can review the website and its product
+
+#### Acceptance Criteria
+
+- User can submit a form including the Product and its category
+
+---
+
+#### User story: View feedback
+
+>>As a Site owner I can view customers feedback forms so that I can learn ways to improve the website
+
+#### Acceptance Criteria
+
+- Site owner can view a feedback page with the submitted forms from customers
+
+---
+
+#### User story: Request Refund
+
+>As a Site user I can submit a refund form so that I can get my money back if product is not up to standard
+
+#### Acceptance Criteria
+
+- User can submit a request form with their order number
+
+---
+
+#### User story: Refund page
+
+>As a Site owner I can view a page with all the refund requests so that begin processing refunds
+
+#### Acceptance Criteria
+
+- Owner can view a page with a table of the refunds
+
+---
+
+#### User story: Newsletter
+
+>As a Site user I can sign up to the websites newsletter so that I can receive the latest offers and news
+
+#### Acceptance Criteria
+
+- Site user can submit their email in a frontend form
+
+---
+
+<br>
+
+### Epic 5: **Checkout**
+
+<br>
+
+#### User story : Stripe/Checkout
+
+>As a Site user I can checkout my products so that I can pay and receive my products
+
+#### Acceptance Criteria
+
+- User can fill out their profile and card details.
+  
+- Stripe handles payment
+
+---
+
+<br>
+----------
+
+
+
+
+-------
+
+
+--------------
+
+### User story 7: Delete expenses
+
+<br>
+
+>As a site user I can delete an expense so that I delete an expense that I dont want
+
+- Acceptance Criteria 1: Given when I click the delete expense button, then the expense is removed from expenses page
+
+### All tests passed
+
+----------
+
+<br>
+
+## Validator testing
+
+<br>
+
+----------
+
+<br>
+
+## Python pep 8
+
+<br>
+
+All the custom Python code was was tested manually thoughout the project and with the following pep8 validator.
+
+<br>
+<br>
+
+### views.py
+
+<br>
+
+- Test passed
+
+<br>
+
+![alt text](static/images/viewspep8.JPG)
+
+<br>
+
+---------------------
+<br>
+
+### models.py
+
+<br>
+
+- I left these line length errors as they dont affect readability
+
+<br>
+
+![alt text](static/images/modelspep8.JPG)
+
+<br>
+
+---------------------
+<br>
+
+### urls.py (app)
+
+<br>
+
+- Test passed
+
+<br>
+
+![alt text](static/images/eurlspep8.JPG)
+
+<br>
+
+---------------------
+
+<br>
+
+### urls.py (project)
+
+<br>
+
+- Test passed
+
+<br>
+
+![alt text](static/images/urlspep8.JPG)
+
+<br>
+
+---------------------
+
+<br>
+
+### forms.py
+
+<br>
+
+- Test passed
+
+<br>
+
+![alt text](static/images/formspep8.JPG)
+
+<br>
+
+---------------------
+<br>
+
+### settings.py
+
+<br>
+
+- I left these errors as they dont affect readability
+
+<br>
+
+![alt text](static/images/settingspep8.JPG)
+
+<br>
+
+---------------------
+
+<br>
+<br>
+
+## Jshint
+
+<br>
+<br>
+
+### main.js
+
+<br>
+
+- Test passed
+
+<br>
+
+![alt text](static/images/jsfile.JPG)
+
+<br>
+
+----------------
+
+<br>
+
+<br>
+
+## WC3 HTML Validatior
+
+<br>
+
+--------------
+
+<br>
+
+### home_page.html
+
+<br>
+
+- Test passed
+
+<br>
+
+![alt text](static/images/homehtml.JPG)
+
+<br>
+
+---------------------
+<br>
+
+### expenses_page.html
+
+<br>
+
+- Test passed
+
+<br>
+
+![alt text](static/images/expenseshtml.JPG)
+
+<br>
+
+--------
+
+<br>
+
+<br>
+
+## WC3 CSS Validatior
+
+<br>
+
+-------
+
+<br>
+
+### style.css
+
+<br>
+
+- Test passed
+
+<br>
+
+![alt text](static/images/css.JPG)
+
+<br>
+
+---------------------
+
+<br>
+<br>
+
+## Light house testing
+
+----------
+
+<br>
+
+- Main pages
+
+<br>
+
+![alt text](static/images/ligth2.JPG)
+
+<br>
+
+![alt text](static/images/ligth1.JPG)
+
+<br>
+
+------------------
+
+<br>
+
+<br>
+
+## Manual Testing
+
+<br>
+
+----
+<br>
+
+### Site responsiveness
+
+<br>
+
+- I manually tested the responsiveness of the website on many devices. I used Chrome DevTools to simulate different screen sizes also. I made sure there were not significant issues such as overlapping text, images not scaling properly, and buttons that are difficult to click.
+
+<br>
+
+![alt text](static/images/response.JPG)
+
+<br>
+
+---------
+
+<br>
+
+### Browser compatiabiliy
+
+<br>
+
+- I checked that the website worked in the following browsers: Google Chrome, Mozilla Firefox, Apple Safari, Microsoft Edge.
+
+<br>
+
+-------
+
+## Bugs
+
+<br>
+
+- Sometimes, the user will get a 404 page error when they try to delete an expense. To reproduce the bug, the user needs to delete a large number of expense items. This bug is currently unresolved.
+
+<br>
+
+![alt text](static/images/deletebug.JPG)
+
+<br>
+
+-------
+
+<br>
