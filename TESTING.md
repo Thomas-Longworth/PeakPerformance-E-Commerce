@@ -171,6 +171,9 @@ User can change quantity in the form
 
 - In cart page, User has button to remove particular product from cart.
 
+
+### **All tests passed**    [x]
+
 ---
 
 <br>
@@ -187,6 +190,8 @@ User can change quantity in the form
 
 - Site owner can submit an answer with front end form
 
+### **All tests passed**    [x]
+
 ---
 
 #### User story: Customer Q&A
@@ -199,6 +204,8 @@ User can change quantity in the form
 
 - User can submit a new question
 
+### **All tests passed**    [x]
+
 ---
 
 #### User story: Customer feedback
@@ -208,6 +215,8 @@ User can change quantity in the form
 #### Acceptance Criteria
 
 - User can submit a form including the Product and its category
+
+### **All tests passed**    [x]
 
 ---
 
@@ -219,6 +228,8 @@ User can change quantity in the form
 
 - Site owner can view a feedback page with the submitted forms from customers
 
+### **All tests passed**    [x]
+
 ---
 
 #### User story: Request Refund
@@ -228,6 +239,8 @@ User can change quantity in the form
 #### Acceptance Criteria
 
 - User can submit a request form with their order number
+
+### **All tests passed**    [x]
 
 ---
 
@@ -239,6 +252,9 @@ User can change quantity in the form
 
 - Owner can view a page with a table of the refunds
 
+### **All tests passed**    [x]
+
+
 ---
 
 #### User story: Newsletter
@@ -248,6 +264,8 @@ User can change quantity in the form
 #### Acceptance Criteria
 
 - Site user can submit their email in a frontend form
+
+### **All tests passed**    [x]
 
 ---
 
@@ -267,6 +285,8 @@ User can change quantity in the form
   
 - Stripe handles payment
 
+### **All tests passed**    [x]
+
 ---
 
 <br>
@@ -280,17 +300,6 @@ User can change quantity in the form
 
 --------------
 
-### User story 7: Delete expenses
-
-<br>
-
->As a site user I can delete an expense so that I delete an expense that I dont want
-
-- Acceptance Criteria 1: Given when I click the delete expense button, then the expense is removed from expenses page
-
-### All tests passed
-
-----------
 
 <br>
 
