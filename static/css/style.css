@@ -14,8 +14,10 @@ body {
 }
 
 .header_div {
+    margin-top: 3%;
     display: flex;
     justify-content: center;
+    margin-bottom: 3%;
 }
 
 .main_title {
