@@ -43,6 +43,29 @@ Welcome to Peak Performance, your one-stop destination for all things fitness! O
 
 <br>
 
+---
+
+E-Commerce Model
+
+EliteTechPC is an e-commerce platform that specializes in selling high-quality prebuilt PCs to consumers. Our mission is to provide customers with the top-of-the-line computer systems that deliver exceptional performance, reliability and value. Target market includes both gaming enthusiasts and professionals in need of high-performance machines. We cater to individuals who value superior hardware components, seamless functionality and latest advancements in technology. This is a Business to Consumer model and it is catered to be as simple yet intuitive for the consumer along with the sign-ups to the newsletter with potential deals and more.
+
+
+<br>
+
+business owner goal
+
+The business owner's goal is to establish a successful eCommerce platform for selling prebuilt PCs. They aim to expand their customer base by offering a visually appealing website with a seamless and secure payment system. The owner also wants to have the ability to manage the product inventory and make updates or changes through a secure and interactive front-end interface. There is a lot of startups starting these type of stores and there is a lot of competition.
+
+
+
+
+Project Goals
+EliteTechPC is my final Portfolio Project for Code Institute's Diploma in Full Stack Software Development (E-Commerce Applications). It is a Full Stack website focused on implementing business logic to manage a centralized database.
+
+
+
+<br>
+
 ## Design/UX
 
 <br>
