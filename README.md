@@ -149,23 +149,41 @@ I charted out my user stories onto the GitHub project board for my website. I es
 
 I brainstormed these User Stories and used Github projects feature to track them
 
+
 <br>
 
-- Epic 1: User Register
+- Epic 1: User Authentication
   
-
+<br>
+User story: User Register
 
 As a Site user I can register an account for the website so that I can use the websites main features
 
 Acceptance Criteria
 
-User can register an account with username and password.
-Redirected to home page
+- User can register an account with username and password.
+- Redirected to home page
 
+<br>
 
+User story: User Login
 
+As a User I can login in to my account so that I can view profile and purchase products
 
+Acceptance Criteria
+User can login and see their name in navbar
 
+<br>
+
+User story: User logout
+
+As a Site User I can logout of my account so that I can stop using website features
+
+Acceptance Criteria
+
+- User can logout. No longer can view profile page.
+
+<br>
 
 
 
