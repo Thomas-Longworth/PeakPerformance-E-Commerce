@@ -117,7 +117,7 @@ I used Balsamiq to build wireframes for the website before I began developement.
 
 <br>
 
-![alt text](static/images/wireframe2.png)
+![alt text](static/images/wireframe3.png)
 
 <br>
 
@@ -130,12 +130,11 @@ I used Balsamiq to build wireframes for the website before I began developement.
 
 <br>
 
-I used the Agile methodology for my project, which emphasizes collaboration, flexibility, and customer satisfaction. One of the key tools used in Agile development is user stories.
+I employed the Agile approach for my project, highlighting collective effort, adaptability, and client contentment. A fundamental element in Agile methodology is the use of user stories.
 
-I created and managed user stories for my website project using github issues. I defined user stories for the features and functions.
+I orchestrated and oversaw user stories for my web project through GitHub issues. I formulated user stories pertaining to the capabilities and functionalities.
 
-I mapped my user stories to GitHub project for my website. I created a GitHub repository for my project and used the GitHub project feature to track the user stories. I linked each user story to a GitHub issue and used labels to indicate priority.
-
+I charted out my user stories onto the GitHub project board for my website. I established a dedicated GitHub repository for my undertaking and leveraged the GitHub project tool to monitor the user stories. Each user story was interlinked with a corresponding GitHub issue, and priority levels were indicated using distinct labels.
 <br>
 
 <br>
@@ -148,12 +147,29 @@ I mapped my user stories to GitHub project for my website. I created a GitHub re
 
 <br>
 
-I wrote these users stories and used Github projects feature to track them
+I brainstormed these User Stories and used Github projects feature to track them
 
 <br>
 
 - Epic 1: User Register
   
+
+
+As a Site user I can register an account for the website so that I can use the websites main features
+
+Acceptance Criteria
+
+User can register an account with username and password.
+Redirected to home page
+
+
+
+
+
+
+
+
+
 
 <br>
 
@@ -162,20 +178,20 @@ I wrote these users stories and used Github projects feature to track them
 
 <br>
 
-- Epic 1: Feedback
+- Epic 3: Contact
   
 
 <br>
 
 
-- Epic 2: Refunds
+- Epic 4: Stripe
   
 
 
 <br>
 
 
-- Epic 2: Email newsletter
+-
 
 <br>
   
