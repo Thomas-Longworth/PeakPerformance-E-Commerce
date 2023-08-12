@@ -75,6 +75,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+ACCOUNT_EMAIL_REQUIRED = False
+
 
 ROOT_URLCONF = 'peak_performance.urls'
 
