@@ -7,9 +7,9 @@
 <br>
 
 - [Testing Strategy](#testing-strategy)
+- [Manual Testing](#manual-testing)
 - [User story testing](#user-story-testing)
 - [Validator Testing](#validator-testing)
-- [Manual Testing](#manual-testing)
 - [Bugs](#bugs)
 
 ------
@@ -27,6 +27,29 @@ I decided on a manual testing strategy for the development of the site. I did th
 ------------
 
 <br>
+
+## Manual Testing
+
+<br>
+
+- I manually tested the responsiveness of the website on many devices. I used Chrome DevTools to simulate different screen sizes also. I made sure there were not significant issues such as overlapping text, images not scaling properly, and buttons that are difficult to click.
+- I rigorously tried different data into forms and fields to assess the validation and error-handling mechanisms.
+- I checked that the website worked in the following browsers: Google Chrome, Mozilla Firefox, Apple Safari, Microsoft Edge.
+
+  
+- Furthermore, I analyze the website's functionality by interacting with features like buttons, dropdowns, and navigation menus to confirm their proper working. This thorough manual testing process guarantees a smooth and user-friendly experience for visitors to my website
+
+<br>
+
+### Site responsiveness
+
+<br>
+
+![alt text](static/images/response.JPG)
+
+<br>
+
+---
 
 <br>
 
@@ -47,7 +70,7 @@ I decided on a manual testing strategy for the development of the site. I did th
 - User can register an account with username and password.
 - Redirected to home page
 
-### **All tests passed**    [x]
+#### **All tests passed**    [x]
 
 ---
 
@@ -59,7 +82,7 @@ I decided on a manual testing strategy for the development of the site. I did th
 
 - User can login and see their name in navbar
 
-### **All tests passed**    [x]
+#### **All tests passed**    [x]
 
 ---
 
@@ -72,7 +95,7 @@ I decided on a manual testing strategy for the development of the site. I did th
 - User can logout. No longer can view profile page.
 
 
-### **All tests passed**    [x]
+#### **All tests passed**    [x]
 
 ---
 
@@ -90,7 +113,7 @@ I decided on a manual testing strategy for the development of the site. I did th
 
 - Products page contains all the product cards
   
-### **All tests passed**    [x]
+#### **All tests passed**    [x]
 
 ---
 
@@ -103,7 +126,7 @@ I decided on a manual testing strategy for the development of the site. I did th
 
 - User can find a product by typing words that correspond to its name or description
 
-### **All tests passed**    [x]
+#### **All tests passed**    [x]
 
 ---
 
@@ -115,7 +138,7 @@ I decided on a manual testing strategy for the development of the site. I did th
 
 - A form page for admin to add a new product to the store
 
-### **All tests passed**    [x]
+#### **All tests passed**    [x]
 
 ---
 
@@ -127,7 +150,7 @@ I decided on a manual testing strategy for the development of the site. I did th
 
 - Admin can edit the product with a button on the products page
 
-### **All tests passed**    [x]
+#### **All tests passed**    [x]
 
 
 ---
@@ -140,7 +163,7 @@ I decided on a manual testing strategy for the development of the site. I did th
 
 - Admin can delete a product from the product page
 
-### **All tests passed**    [x]
+#### **All tests passed**    [x]
 
 ---
 
@@ -159,7 +182,7 @@ I decided on a manual testing strategy for the development of the site. I did th
 Form available to add product to bag
 User can change quantity in the form
 
-### **All tests passed**    [x]
+#### **All tests passed**    [x]
 
 ---
 
@@ -172,27 +195,14 @@ User can change quantity in the form
 - In cart page, User has button to remove particular product from cart.
 
 
-### **All tests passed**    [x]
+#### **All tests passed**    [x]
+
 
 ---
 
-<br>
-
-### **Epic 4: Contact**
+### Epic 4: **Contact**
 
 <br>
-
-#### User story: Admin Q&A
-
->As a Site Owner I can answer the customers questions form** so that I give them the required info
-
-#### Acceptance Criteria
-
-- Site owner can submit an answer with front end form
-
-### **All tests passed**    [x]
-
----
 
 #### User story: Customer Q&A
 
@@ -204,7 +214,7 @@ User can change quantity in the form
 
 - User can submit a new question
 
-### **All tests passed**    [x]
+#### **All tests passed**    [x]
 
 ---
 
@@ -216,7 +226,7 @@ User can change quantity in the form
 
 - User can submit a form including the Product and its category
 
-### **All tests passed**    [x]
+#### **All tests passed**    [x]
 
 ---
 
@@ -228,7 +238,7 @@ User can change quantity in the form
 
 - Site owner can view a feedback page with the submitted forms from customers
 
-### **All tests passed**    [x]
+#### **All tests passed**    [x]
 
 ---
 
@@ -240,7 +250,7 @@ User can change quantity in the form
 
 - User can submit a request form with their order number
 
-### **All tests passed**    [x]
+#### **All tests passed**    [x]
 
 ---
 
@@ -252,7 +262,7 @@ User can change quantity in the form
 
 - Owner can view a page with a table of the refunds
 
-### **All tests passed**    [x]
+#### **All tests passed**    [x]
 
 
 ---
@@ -265,7 +275,7 @@ User can change quantity in the form
 
 - Site user can submit their email in a frontend form
 
-### **All tests passed**    [x]
+#### **All tests passed**    [x]
 
 ---
 
@@ -285,38 +295,26 @@ User can change quantity in the form
   
 - Stripe handles payment
 
-### **All tests passed**    [x]
+#### **All tests passed**    [x]
 
 ---
 
 <br>
-----------
 
-
-
-
--------
-
-
---------------
-
-
-<br>
 
 ## Validator testing
 
 <br>
 
-----------
+
 
 <br>
 
 ## Python pep 8
 
-<br>
 
 All the custom Python code was was tested manually thoughout the project and with the following pep8 validator.
-There are some minor errors for lines too long and I left them as they dont affect readability
+There are some minor errors for lines too long and I left them as they dont affect readability.
 
 
 <br>
@@ -324,7 +322,7 @@ There are some minor errors for lines too long and I left them as they dont affe
 
 ### Main project folder
 
-<br>
+
 
 - Settings.py
 - Urls.py
@@ -510,59 +508,20 @@ There are some minor errors for lines too long and I left them as they dont affe
 
 
 
-<br>
-
-------------------
-
-<br>
-
-<br>
-
-## Manual Testing
-
-<br>
-
-----
-<br>
-
-### Site responsiveness
-
-<br>
-
-- I manually tested the responsiveness of the website on many devices. I used Chrome DevTools to simulate different screen sizes also. I made sure there were not significant issues such as overlapping text, images not scaling properly, and buttons that are difficult to click.
-
-<br>
-
-![alt text](static/images/response.JPG)
-
-<br>
-
----------
-
-<br>
-
-### Browser compatiabiliy
-
-<br>
-
-- I checked that the website worked in the following browsers: Google Chrome, Mozilla Firefox, Apple Safari, Microsoft Edge.
-
-<br>
-
 -------
 
 ## Bugs
 
 <br>
 
-- Sometimes, the user will get a 404 page error when they try to delete an expense. To reproduce the bug, the user needs to delete a large number of expense items. This bug is currently unresolved.
+- Sometimes, the admin will get a 404 page error when they try to delete a product. To reproduce the bug, the user needs to delete a large number of expense items. 
+- Although this bug is currently unresolved, refres
 
-<br>
 
-![alt text](static/images/deletebug.JPG)
+
+![alt text](static/images/del.jpg)
 
 <br>
 
 -------
 
-<br>
