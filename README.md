@@ -591,7 +591,7 @@ This feature allows users to remove an expense from their account. Users can del
 <br>
 <br>
 
-The testing strategy for the website can be found here [Testing.md](https://github.com/Thomas-Longworth/Expense-tracker/blob/main/TESTING.md)
+The testing strategy for the website can be found here [Testing.md]
 
 <br>
 

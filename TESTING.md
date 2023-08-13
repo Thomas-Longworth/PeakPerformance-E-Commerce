@@ -316,6 +316,8 @@ User can change quantity in the form
 <br>
 
 All the custom Python code was was tested manually thoughout the project and with the following pep8 validator.
+There are some minor errors for lines too long and I left them as they dont affect readability
+
 
 <br>
 <br>
@@ -336,20 +338,26 @@ All the custom Python code was was tested manually thoughout the project and wit
 
 ---
 
+### Products App
 
+
+
+- views.py
+- forms.py
+- admin.py
+- model.py
+  
+
+![alt text](static/images/product-view.JPG)
+![alt text](static/images/product-form.JPG)
+![alt text](static/images/product-admin.JPG)
+![alt text](static/images/product-model.JPG)
 
 ---
 
 <br>
 
-
-
-
-
-## Checkout App
-
-<br>
-
+### Checkout App
 
 - views.py
 - models.py
@@ -369,9 +377,8 @@ All the custom Python code was was tested manually thoughout the project and wit
 
 ### Bag App
 
-<br>
 
-- view.py
+- views.py
 - context.py
 
 ![alt text](static/images/bag-view.JPG)
@@ -379,12 +386,27 @@ All the custom Python code was was tested manually thoughout the project and wit
 
 ---
 
+### Profile App
+
+
+
+- views.py
+- forms.py
+- models.py
+
+![alt text](static/images/profile-view.JPG)
+![alt text](static/images/profile-model.JPG)
+![alt text](static/images/profile-form.JPG)
+
+---
+
+
 
 <br>
 
 ### Feedback app
 
-<br>
+
 
 - views.py
 - models.py
@@ -398,208 +420,95 @@ All the custom Python code was was tested manually thoughout the project and wit
 
 
 
+### Refund App
 
 
 
+- views.py
+- models.py
 
 
+![alt text](static/images/refund-view.JPG)
+![alt text](static/images/refund-model.JPG)
 
-
-
-
-
-
+---
 
 
 
 
 
 ---------------------
-<br>
-
-### models.py
-
-<br>
-
-- I left these line length errors as they dont affect readability
-
-<br>
-
-![alt text](static/images/modelspep8.JPG)
-
-<br>
-
----------------------
-<br>
-
-### urls.py (app)
-
-<br>
-
-- Test passed
-
-<br>
-
-![alt text](static/images/eurlspep8.JPG)
-
-<br>
-
----------------------
-
-<br>
-
-### urls.py (project)
-
-<br>
-
-- Test passed
-
-<br>
-
-![alt text](static/images/urlspep8.JPG)
-
-<br>
-
----------------------
-
-<br>
-
-### forms.py
-
-<br>
-
-- Test passed
-
-<br>
-
-![alt text](static/images/formspep8.JPG)
-
-<br>
-
----------------------
-<br>
-
-### settings.py
-
-<br>
-
-- I left these errors as they dont affect readability
-
-<br>
-
-![alt text](static/images/settingspep8.JPG)
-
-<br>
-
----------------------
 
 <br>
 <br>
 
-## Jshint
 
-<br>
-<br>
-
-### main.js
-
-<br>
-
-- Test passed
-
-<br>
-
-![alt text](static/images/jsfile.JPG)
-
-<br>
-
-----------------
-
-<br>
-
-<br>
 
 ## WC3 HTML Validatior
 
 <br>
 
+
+
+- Index.html
+  
+![alt text](static/images/index.JPG)
+
+- Products.html
+
+![alt text](static/images/product-html.JPG)
+
+
+
 --------------
 
 <br>
 
-### home_page.html
 
-<br>
 
-- Test passed
 
-<br>
 
-![alt text](static/images/homehtml.JPG)
 
-<br>
-
----------------------
-<br>
-
-### expenses_page.html
-
-<br>
-
-- Test passed
-
-<br>
-
-![alt text](static/images/expenseshtml.JPG)
-
-<br>
-
---------
-
-<br>
-
-<br>
 
 ## WC3 CSS Validatior
 
 <br>
 
--------
 
-<br>
+- Style.css
 
-### style.css
+![alt text](static/images/style-css.JPG)
 
-<br>
+- Checkout.css
+  
+![alt text](static/images/checkout-css.JPG)
 
-- Test passed
 
-<br>
+---
 
-![alt text](static/images/css.JPG)
-
-<br>
-
----------------------
-
-<br>
 <br>
 
 ## Light house testing
 
-----------
+
 
 <br>
 
-- Main pages
+- Index.html
+  
+![alt text](static/images/light-home.JPG)
+
+- Products.html
+  
+![alt text](static/images/light-product.JPG)
+
+
+---
+
 
 <br>
 
-![alt text](static/images/ligth2.JPG)
 
-<br>
-
-![alt text](static/images/ligth1.JPG)
 
 <br>
 
