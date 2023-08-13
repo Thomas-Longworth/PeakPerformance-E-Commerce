@@ -654,6 +654,7 @@ I deployed my project to Herou using the following steps:
 - Create an env.py file in the djagno repository. Import the os library and set the environment variable for the DATABASE_URL pasting in the address copied from Heroku. It should look like this: os.environ["DATABASE_URL"] = "Pasted URL".
 - In the env.py file, create a secret key. It should look like this: os.environ["SECRET_KEY"] = " Your Secret key ".
 - Copy your secret key and paste it into a Heroku config var. Use SECRET_KEY as the var key.
+- Copy the STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY and paste into Heroku env var.
 - Copy and paste the following into your projects settings.py file : from pathlib import Path, import os, import dj_database_url,if os,path.isfile("env.py"):import env.
 - Remove djangos insecure key and replace it with: SECRET_KEY = os.environ.get('Your secret key').
 - Comment out the database section the setting.py file. Replace it with: DATABASES = { 'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))} .
@@ -714,3 +715,35 @@ I researched keywords for high voloume with little
 i add decriptive tages for the images
 I tried include keywords in the projects html elements alos
 I changed the image file name to be more descriptive
+
+
+
+
+
+
+
+
+
+
+
+
+### Forking the project
+
+<br>
+
+- Sign/regester in to Github and go to my repository at <https://github.com/Thomas-Longworth/PeakPerformance> .
+- Navagage the Fork button at the top right of the page and select it.
+- The fork is now created and copied to your repositories.
+
+<br>
+
+### Cloning the project
+  
+- Sign/regester in to Github and go to my repository at <https://github.com/Thomas-Longworth/PeakPerformance> .
+- Select the green ‘code’ button.
+- Choose which clone option you want(HTTPS, SSH or Github CLI).
+- Copy the url.
+- Open git bash
+- Type ‘git clone’ and then paste the URL you copied. Press Enter.
+
+<br>
