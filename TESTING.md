@@ -320,17 +320,99 @@ All the custom Python code was was tested manually thoughout the project and wit
 <br>
 <br>
 
-### views.py
+### Main project folder
 
 <br>
 
-- Test passed
+- Settings.py
+- Urls.py
+
+![alt text](static/images/setting.JPG)
+![alt text](static/images/url.JPG)
+
+
 
 <br>
 
-![alt text](static/images/viewspep8.JPG)
+---
+
+
+
+---
 
 <br>
+
+
+
+
+
+## Checkout App
+
+<br>
+
+
+- views.py
+- models.py
+- forms.py
+- admin.py
+
+![alt text](static/images/checkout-view.JPG)
+![alt text](static/images/checkout-model.JPG)
+![alt text](static/images/checkout-form.JPG)
+![alt text](static/images/checkout-admin.JPG)
+
+
+
+<br>
+
+---
+
+### Bag App
+
+<br>
+
+- view.py
+- context.py
+
+![alt text](static/images/bag-view.JPG)
+![alt text](static/images/bags-context.JPG)
+
+---
+
+
+<br>
+
+### Feedback app
+
+<br>
+
+- views.py
+- models.py
+- forms.py
+
+![alt text](static/images/feedback-view.JPG)
+![alt text](static/images/feedback-model.JPG)
+![alt text](static/images/feedback-form.JPG)
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---------------------
 <br>
