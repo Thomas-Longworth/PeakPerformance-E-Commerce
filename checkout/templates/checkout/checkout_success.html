@@ -12,8 +12,6 @@
         <div class="col">
             <hr>
             <h2 class="logo-font mb-4">Thank you for your purchase</h2>
-            <hr>
-            <h2 class="logo-font mb-4">Order Information sent to {{ order.email }}</h2>
         </div>
     </div>
 
@@ -23,19 +21,11 @@
         </div>
         <div class="row">
             <div class="col-12 col-lg-7 text-right">
-                {% if from_profile %}
-                <a href="{% url 'profile' %}" class="btn btn-black rounded-0 my-2">
-                    <span class="icon mr-2">
-                        <i class="fas fa-angle-left"></i>
-                    </span>
-                    <span class="text-uppercase">Back to Profile</span>
-                </a>
-                {% else %}
-                <a href="{% url 'products' %}" class="btn btn-black rounded-0 my-2">
 
-                    <span class="text-uppercase">Back to home</span>
+                <a href="/">
+                    <button type="button" class="btn btn-primary">Return to main page</button>
                 </a>
-                {% endif %}
+
             </div>
         </div>
     </div>
