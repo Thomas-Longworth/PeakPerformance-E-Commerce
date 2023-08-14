@@ -36,11 +36,12 @@
 [PeakPerformance]()
 
 Welcome to Peak Performance, your one-stop destination for all things fitness! Our gym website is dedicated to helping you reach the pinnacle of your fitness journey. Explore our extensive range of premium nutritional products, carefully curated to fuel your body and optimize performance. Elevate your workouts with top-notch gym equipment designed to push your limits and achieve your goals. Show off your style and dedication with our stylish and comfortable apparel, perfect for both in and out of the gym. Whether you're a seasoned fitness enthusiast or just starting, Peak Performance is here to support you every step of the way, ensuring you reach new heights in your fitness endeavors. Unleash your true potential with us!
+
 <https://peak-perfomance-2c33a326e9fb.herokuapp.com/>
 <br>
 
 ---
-
+---
 <br>
 
 ### Project Goals
