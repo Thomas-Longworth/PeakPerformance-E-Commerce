@@ -462,6 +462,17 @@ There are some minor errors for lines too long and I left them as they dont affe
 
 <br>
 
+## JSHint Javascript Validator
+
+- Stripe_elements.js
+  
+![alt text](static/images/js.JPG)
+
+
+<br>
+
+---
+
 
 
 

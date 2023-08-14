@@ -85,23 +85,18 @@
                             Admin
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{% url 'add_product' %}">Add new product</a>
+
                             <a class="dropdown-item" href="{% url 'site_feedback' %}">Customer feedback</a>
                             <a class="dropdown-item" href="{% url 'site_refunds' %}">Customer refunds</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="{% url 'add_product' %}">Add new product</a>
                         </div>
                     </li>
                     {% endif %}
 
 
                 </ul>
-                {% if messages %}
-                {% for message in messages %}
-                {{message}}
-                {% endfor %}
 
-                {% endif %}
 
                 {% if request.user.is_authenticated %}
                 <span class="navbar-text text-light">
