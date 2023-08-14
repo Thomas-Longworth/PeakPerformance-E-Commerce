@@ -96,6 +96,12 @@
 
 
                 </ul>
+                {% if messages %}
+                {% for message in messages %}
+                {{message}}
+                {% endfor %}
+
+                {% endif %}
 
                 {% if request.user.is_authenticated %}
                 <span class="navbar-text text-light">
@@ -133,9 +139,11 @@
     {% block messages %}
 
     {% if messages %}
-    <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="3000">
+    <div style="position: absolute;top: 0; right: 0; z-index:1;" id="toast" class="toast" role="alert"
+        aria-live="assertive" aria-atomic="true" data-delay="3000">
         <div class="toast-header">
-            <img src="{% static 'images/tick.jpg' %}" class="rounded mr-2" alt="..." height="50px" width="50px">
+            <img src="{% static 'images/tick.jpg' %}" class="rounded mr-2" alt="image container green check tick"
+                height="50px" width="50px">
             <strong class="mr-auto">Bootstrap</strong>
 
             <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
@@ -145,7 +153,7 @@
         <div class="toast-body">
             <ul class="messages">
                 {% for message in messages %}
-                <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+                <li{% if message.tags %} class=" mess {{ message.tags }}" {% endif %}>{{ message }}</li>
                     {% endfor %}
             </ul>
         </div>
@@ -226,13 +234,13 @@
                     </ul>
                 </div>
 
-                </ </div>
             </div>
+        </div>
 
-            {% endblock %}
+        {% endblock %}
 
-            {% block postloadjs %}
-            {% endblock %}
+        {% block postloadjs %}
+        {% endblock %}
 
 
 </body>

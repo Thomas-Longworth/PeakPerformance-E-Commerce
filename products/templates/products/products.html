@@ -31,15 +31,14 @@
                     <div class="product_details">
                         <h5><a href="ec-product-detail.html">{{product.name}}</a></h5>
                         <ul class="product_price list-unstyled">
-                            <li class="old_price">$ {{product.price}}</li>
+                            <li class="price">$ {{product.price}}</li>
 
                         </ul>
 
                         {% if request.user.is_superuser %}
                         <ul class="product_price list-unstyled">
-                            <li class="new_price"><a href="{% url 'edit_product' product.id %}">Edit</a></li>
-                            <li class="old_price"><a class="text-danger"
-                                    href="{% url 'delete_product' product.id %}">Delete</a></li>
+                            <li><a href="{% url 'edit_product' product.id %}">Edit</a></li>
+                            <li><a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a></li>
                         </ul>
                         {% endif %}
                     </div>

@@ -30,7 +30,8 @@ body {
 }
 
 .car-image {
-    border: solid 1px black
+    border: solid 2px black;
+
 }
 
 .header_div {
@@ -482,4 +483,12 @@ hr {
 
 .divider {
     border-top: 2px solid
+}
+
+.price {
+    color: black;
+}
+
+.mess {
+    color: black;
 }
