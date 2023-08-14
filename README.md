@@ -36,7 +36,7 @@
 [PeakPerformance]()
 
 Welcome to Peak Performance, your one-stop destination for all things fitness! Our gym website is dedicated to helping you reach the pinnacle of your fitness journey. Explore our extensive range of premium nutritional products, carefully curated to fuel your body and optimize performance. Elevate your workouts with top-notch gym equipment designed to push your limits and achieve your goals. Show off your style and dedication with our stylish and comfortable apparel, perfect for both in and out of the gym. Whether you're a seasoned fitness enthusiast or just starting, Peak Performance is here to support you every step of the way, ensuring you reach new heights in your fitness endeavors. Unleash your true potential with us!
-
+<https://peak-perfomance-2c33a326e9fb.herokuapp.com/>
 <br>
 
 ---
@@ -67,11 +67,13 @@ The buisness owner aims to create a thriving eCommerce site for nutritional prod
 
 SEO 
 
-![alt text](static/images/keywords.JPG)
+![alt text](static/images/keyword.JPG)
+
 
 <br>
 
-Marketing  Stragety 
+Marketing  Stragegy 
+
 I successfully implemented an effective marketing strategy for my ecommerce website through a dedicated Facebook business page. Leveraging the power of social media, I crafted engaging and informative images that showcases the products.This comprehensive approach of buildina a Facebook business page significantly expanded the online presence of the website, attracting a larger customer base and contributing to increased sales and brand loyalty.
 <br>
 
@@ -431,10 +433,25 @@ The footer provides site users with links to the facebook buisness page
 
 
 ![alt text](static/images/foot.JPG)
-![alt text](static/images/ref.JPG)
 
+
+### Registering an account
+
+This feature allows users to registered an account ontthe website. Users will need to enter their username and password to access their account. Email is optional. Once logged in, they will be able to unlock all the website features.
+
+![alt text](static/images/reg.JPG)
+
+### Products
+
+All the products in the inventory are listed on the product page.
 ![alt text](static/images/prod.JPG)
+
+This feature allows users to edit or update their existing expenses. Users can modify the details of an expense such as the date, amount, category, or description. This feature is useful when users make a mistake or need to make changes to their expenses.
+
 ![alt text](static/images/add.JPG)
+### edit
+This feature allows the admin to edit or update their existing products in the inventory. They can modify any details. This feature is useful when users make a mistake or need to make changes to their expenses.
+
 ![alt text](static/images/edit.JPG)
 ![alt text](static/images/profile.JPG)
 
@@ -443,6 +460,7 @@ The footer provides site users with links to the facebook buisness page
 ![alt text](static/images/refund1.JPG)
 ![alt text](static/images/refund2.JPG)
 
+![alt text](static/images/search.JPG)
 ![alt text](static/images/ques.JPG)
 ![alt text](static/images/news.JPG)
 ![alt text](static/images/check.JPG)
@@ -503,7 +521,6 @@ The footer provides site users with links to social media.
 
 <br>
 
-This feature allows new users to register an account on the website. Users will need to provide two basic pieces of information which is their username and password to create an account. Once registered, they will be able to log in to your website and access the features that are available to registered users.
 
 <br>
 
@@ -519,7 +536,6 @@ This feature allows new users to register an account on the website. Users will 
 
 <br>
 
-This feature allows users who have already registered an account to log in to the website. Users will need to enter their username and password to access their account. Once logged in, they will be able to view their expenses, add new expenses, and use the budget calculator.
 
 <br>
 
