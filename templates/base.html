@@ -4,7 +4,7 @@
 <html lang="en">
 
 <head>
-    <script src="https://kit.fontawesome.com/0655c4e462.js" crossorigin="anonymous"></script>
+
     {% block meta %}
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
@@ -18,14 +18,17 @@
     {% block corecss %}
     <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
 
-    <script src="https://kit.fontawesome.com/0655c4e462.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="{% static 'css/checkout.css' %}">
 
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <script src="https://js.stripe.com/v3/"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0655c4e462.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/checkout.css' %}">
 
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     {% endblock %}
 
 
@@ -34,97 +37,99 @@
 </head>
 
 <body>
+    {% block nav %}
+    <div class="container-fluid dark">
 
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">PeakPerformance</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <nav class="navbar navbar-expand-lg navbar-dark dark">
+            <a class="navbar-brand" href="#">PeakPerformance</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item ">
-                    <a class="nav-link" href='/'>Home <span class="sr-only">(current)</span></a>
-                </li>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href='/'>Home <span class="sr-only">(current)</span></a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'products' %}">Products</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'products' %}">Products</a>
+                    </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Account
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        {% if request.user.is_authenticated %}
-                        <a class="dropdown-item" href="{% url 'profile' %}"> My Profile</a>
-                        <a class="dropdown-item" href="{% url 'feedback_view' %}">Leave feedback</a>
-                        <a class="dropdown-item" href="{% url 'request_view' %}">Request refund</a>
-                        <a class="dropdown-item" href="{% url 'subscription' %}">Newsletter</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a>
-                        {% else %}
-                        <a class="dropdown-item" href="{% url 'account_login' %}">Login</a>
-                        <a class="dropdown-item" href="{% url 'account_signup' %}">Register</a>
-                        <a class="dropdown-item" href="{% url 'subscription' %}">Subcribe</a>
-                        {% endif %}
-                    </div>
-                </li>
-                {% if request.user.is_superuser %}
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Admin
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{% url 'add_product' %}">Add new product</a>
-                        <a class="dropdown-item" href="{% url 'site_feedback' %}">Customer feedback</a>
-                        <a class="dropdown-item" href="{% url 'site_refunds' %}">Customer refunds</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Account
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            {% if request.user.is_authenticated %}
+                            <a class="dropdown-item" href="{% url 'profile' %}"> My Profile</a>
+                            <a class="dropdown-item" href="{% url 'feedback_view' %}">Leave feedback</a>
+                            <a class="dropdown-item" href="{% url 'request_view' %}">Request refund</a>
+                            <a class="dropdown-item" href="{% url 'subscription' %}">Newsletter</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a>
+                            {% else %}
+                            <a class="dropdown-item" href="{% url 'account_login' %}">Login</a>
+                            <a class="dropdown-item" href="{% url 'account_signup' %}">Register</a>
+                            <a class="dropdown-item" href="{% url 'subscription' %}">Subcribe</a>
+                            {% endif %}
+                        </div>
+                    </li>
+                    {% if request.user.is_superuser %}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Admin
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{% url 'add_product' %}">Add new product</a>
+                            <a class="dropdown-item" href="{% url 'site_feedback' %}">Customer feedback</a>
+                            <a class="dropdown-item" href="{% url 'site_refunds' %}">Customer refunds</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    {% endif %}
+
+
+                </ul>
+
+                {% if request.user.is_authenticated %}
+                <span class="navbar-text text-light">
+
+                    <p>{{user}}</p>
+
+                </span>
+                <span class="navbar-text">
+
+                    <a class="nav-link" href="{% url 'view_bag' %}"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
+
+                </span>
+                {% else %}
+
+                <span class="navbar-text">
+                    <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+
+                </span>
+                <span class="navbar-text">
+                    <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
+
+                </span>
                 {% endif %}
 
 
-            </ul>
-
-            {% if request.user.is_authenticated %}
-            <span class="navbar-text text-light">
-
-                <p>{{user}}</p>
-
-            </span>
-            <span class="navbar-text">
-
-                <a class="nav-link" href="{% url 'view_bag' %}"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
-
-            </span>
-            {% else %}
-
-            <span class="navbar-text">
-                <a class="nav-link" href="{% url 'account_login' %}">Login</a>
-
-            </span>
-            <span class="navbar-text">
-                <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
-
-            </span>
-            {% endif %}
 
 
 
 
 
-
-
-        </div>
-    </nav>
-
-
+            </div>
+        </nav>
+    </div>
+    {% endblock %}
     {% block messages %}
 
     {% if messages %}
@@ -173,62 +178,61 @@
 
     {% block footer %}
 
-    <div class="container-fluid mt-5 bg-dark ">
-        <div class="cardfoot  mx-5 bg-dark">
-            <div class="row mb-4 bg-dark ">
-                <div class="col-md-4 col-sm-4 col-xs-4 bg-dark ">
-                    <div class="footer-text pull-left bg-dark">
-                        <div class="d-flex text-light">
-                            <h1>PeakPerformance</h1>
+    <div class="container-fluid mt-5 dark">
+        <div class="cardfoot  mx-5 ">
+            <div class="row mb-4 dark ">
+                <div class="col-md-4 col-sm-4 col-xs-4 dark ">
+                    <div class="footer-text pull-left dark">
+                        <div class="d-flex ">
+                            <h1 class="white">PeakPerformance</h1>
                         </div>
-                        <p class="card-text text-light">Empowering Fitness Journeys, One Product at a Time</p>
+                        <p class="card-text grey">Empowering Fitness Journeys, One Product at a Time</p>
 
                     </div>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-2"></div>
-                <div class="col-md-2 col-sm-2 col-xs-2 bg-dark .text-light">
-                    <h5 class="heading text-light">Navagation</h5>
-                    <ul class="text-light">
-                        <li>Home</li>
-                        <li>Products</li>
-                        <li>Account</li>
+                <div class="col-md-2 col-sm-2 col-xs-2 dark ">
+                    <h5 class="heading ">Navagation</h5>
+                    <ul class="nlinks">
+                        <li><a class="nlinks" href="/">Home</a></li>
+                        <li><a class="nlinks" href="{% url 'products' %}">Products</a></li>
+                        <li><a class="nlinks" href="/">Account</a></li>
 
                     </ul>
                 </div>
-                <div class="col-md-2 col-sm-2 col-xs-2 bg-dark text-light">
-                    <h5 class="heading">Contack US</h5>
-                    <ul class="card-text text-light">
-                        <li><a class="dropdown-item  text-light" href="{% url 'subscription' %}">Newsletter</a></li>
+                <div class="col-md-2 col-sm-2 col-xs-2 dark">
+                    <h5 class="heading white">Contack Us</h5>
+                    <ul class="card-text ">
+                        <li><a class="nlinks" href="{% url 'subscription' %}">Newsletter</a>
+                        </li>
                         {% if request.user.is_authenticated %}
-                        <li><a class="dropdown-item  text-light" href="{% url 'request_view' %}">Refunds</a></li>
-                        <li><a class="dropdown-item  text-light" href="{% url 'feedback_view' %}">Feedback</a></li>
+                        <li><a class="nlinks" href="{% url 'request_view' %}">Refunds</a></li>
+                        <li><a class="nlinks" href="{% url 'feedback_view' %}">Feedback</a></li>
                         {% endif %}
 
                     </ul>
                 </div>
-                <div class="col-md-2 col-sm-2 col-xs-2 bg-dark text-light">
-                    <h5 class="heading">Social media</h5>
-                    <ul class="card-text text-light">
-                        <li><a href="https://www.facebook.com/profile.php?id=61550356434270" target="_blank"
-                                rel="noopener"><i class="fa-brands fa-facebook"></i></a></li>
+                <div class="col-md-2 col-sm-2 col-xs-2 dark ">
+                    <h5 class="heading diff white">Social media</h5>
+                    <ul class="card-text ">
+                        <li><a class="nlinks" href="https://www.facebook.com/profile.php?id=61550356434270"
+                                target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a></li>
 
-                        <li><a href="https://instagram.com/" target="_blank" rel="noopener"><i
+                        <li><a class="nlinks" href="https://instagram.com/" target="_blank" rel="noopener"><i
                                     class="fa-brands fa-instagram"></i></a></li>
 
-                        <li><a href="https://twitter.com/" target="_blank" rel="noopener"><i
+                        <li><a class="nlinks" href="https://twitter.com/" target="_blank" rel="noopener"><i
                                     class="fa-brands fa-square-twitter"></i></a></li>
                     </ul>
                 </div>
 
+                </ </div>
             </div>
 
-        </div>
-    </div>
+            {% endblock %}
 
-    {% endblock %}
-
-    {% block postloadjs %}
-    {% endblock %}
+            {% block postloadjs %}
+            {% endblock %}
 
 
 </body>
