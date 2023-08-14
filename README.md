@@ -63,9 +63,21 @@ The buisness owner aims to create a thriving eCommerce site for nutritional prod
 
 
 
+<br>
 
+SEO 
+
+![alt text](static/images/keywords.JPG)
 
 <br>
+
+Marketing  Stragety 
+I successfully implemented an effective marketing strategy for my ecommerce website through a dedicated Facebook business page. Leveraging the power of social media, I crafted engaging and informative images that showcases the products.This comprehensive approach of buildina a Facebook business page significantly expanded the online presence of the website, attracting a larger customer base and contributing to increased sales and brand loyalty.
+<br>
+
+Facebook buisness page
+
+![alt text](static/images/facebook.JPG)
 
 ## Design/UX
 
@@ -75,13 +87,12 @@ The buisness owner aims to create a thriving eCommerce site for nutritional prod
 
 <br>
 
-The app is designed to have a natural flow, with the main focus on basic crud functionality. All the pages include a header with navagation links to login/logout/sign up and links to all the pages. The website includes a footer at the bottom of each page with links to social media.
+The app is designed to have a natural flow, with the main focus on showcasing the products. All the pages include a header with navagation links to login/logout/sign up and links to all the pages. The website includes a footer at the bottom of each page with links to social media.
 
-<br>
 
------
+### Entity relationship diagram
 
-<br>
+![alt text](static/images/erd.png)
 
 #### Wireframes
 
@@ -397,15 +408,47 @@ As a Site user I can checkout my products so that I can pay and receive my produ
 
 <br>
 
+
+### Navagation Bar
+
+The nav bar allows site users to signup/login/register and visit each page. It features a cart link on right side and drop down menus for account and admin
+
+
+![alt text](static/images/nav.JPG)
+
+<br>
+
 ### Home Page
 
-<br>
+The home page gives the user information about the website. It allows them to register/login/logout and navagate to the products page. It features a carousel of three images.
 
-The home page gives the user information about the website. It allows them to register/login/logout and navagate to the Expenses page.
+![alt text](static/images/main.JPG)
 
-<br>
 
-![alt text](static/images/homes.JPG)
+### Footer
+
+The footer provides site users with links to the facebook buisness page
+
+
+![alt text](static/images/foot.JPG)
+![alt text](static/images/ref.JPG)
+
+![alt text](static/images/prod.JPG)
+![alt text](static/images/add.JPG)
+![alt text](static/images/edit.JPG)
+![alt text](static/images/profile.JPG)
+
+![alt text](static/images/feed1.JPG)
+![alt text](static/images/feed2.JPG)
+![alt text](static/images/refund1.JPG)
+![alt text](static/images/refund2.JPG)
+
+![alt text](static/images/ques.JPG)
+![alt text](static/images/news.JPG)
+![alt text](static/images/check.JPG)
+
+![alt text](static/images/stripe.JPG)
+
 
 <br>
 
