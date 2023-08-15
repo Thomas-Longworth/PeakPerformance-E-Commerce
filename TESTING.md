@@ -305,23 +305,21 @@ User can change quantity in the form
 
 ## Validator testing
 
+
+
 <br>
 
-
-
-<br>
-
-## Python pep 8
+### Python pep 8
 
 
 All the custom Python code was was tested manually thoughout the project and with the following pep8 validator.
-There are some minor errors for lines too long and I left them as they dont affect readability.
+There are some minor errors for linelength. However, I left them as they dont affect readability.
 
 
 <br>
 <br>
 
-### Main project folder
+### Main project .py
 
 
 
@@ -527,13 +525,12 @@ There are some minor errors for lines too long and I left them as they dont affe
 <br>
 
 - Sometimes, the admin will get a 404 page error when they try to delete a product. To reproduce the bug, the user needs to delete a large number of expense items. 
-- Although this bug is currently unresolved, refres
+- Although this bug is currently unresolved, hard refreshing the page fixes the issue.
 
 
 
 ![alt text](static/images/del.jpg)
 
-<br>
 
 -------
 

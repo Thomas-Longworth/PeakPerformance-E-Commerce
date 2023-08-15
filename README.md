@@ -1,7 +1,5 @@
 # PeakPerformance
 
-
-
 ![alt text](static/images/response.JPG)
 
 <br>
@@ -25,19 +23,19 @@
 <br>
 
 ------
-<br>
+
 
 <br>
 
 ## About
 
-<br>
-
-[PeakPerformance](https://peak-perfomance-2c33a326e9fb.herokuapp.com)
-
-Welcome to Peak Performance, your one-stop destination for all things fitness! This website is dedicated to helping you reach the pinnacle of your fitness journey. Explore our extensive range of premium nutritional products, carefully curated to fuel your body and optimize performance. Elevate your workouts with top-notch gym equipment designed to push your limits and achieve your goals. Show off your style and dedication with our stylish and comfortable apparel, perfect for both in and out of the gym. Whether you're a seasoned fitness enthusiast or just starting, Peak Performance is here to support you every step of the way, ensuring you reach new heights in your fitness endeavors. Unleash your true potential with us!
 
 
+[Live Site](https://peak-perfomance-2c33a326e9fb.herokuapp.com)
+
+Welcome to Peak Performance. This website is dedicated to helping you reach the pinnacle of your fitness journey. Explore our extensive range of gym equipment, nutritional products, carefully curated to fuel your body and optimize performance. 
+
+---
 <br>
 
 ## Objectives
@@ -49,18 +47,23 @@ Welcome to Peak Performance, your one-stop destination for all things fitness! T
 PeakPerformance is my fifth and final Portfolio Project for Code Institute's Diploma in Full Stack Software Development (E-Commerce Applications). It is a Full Stack website at showcasing skill in HTML,CSS,Javascript,Bootstrap, Python and Django.
 
 <br>
----
+
 
 ### E-Commerce Model
 
 PeakPerformance is an B2C e-commerce platform that specializes in selling gym/nutritional/apparel products to consumers. The goal is to provide customers with  good value, high quality products. The website is aimed at fitness enthusiasts of all ages. This is a Business to Consumer model and it aimed at appealing to both customers and site guests. It features a newsletters signup form where customer will be offered incentives such as exclusive deals, discounts, or relevant content to encourage signups.
 
+<br>
+
 ### Target audience
+
 The target audience for Peak Performance includes individuals who are interested in fitness, health, and improving their overall well-being. 
+
 - Fitness Enthusiasts: These are individuals who are actively engaged in fitness activities, such as weightlifting, running, yoga, or crossfit. They might be looking for high-quality gym equipment and apparel to support their workouts.
+  
 - Health-Conscious Individuals: People who prioritize their health and wellness, and are looking for nutritional supplements, vitamins, and other products to support their balanced diets.
 
-- Beginners: Those who are new to fitness and are seeking guidance, equipment, and clothing to start their fitness journey. T
+- Beginners: Those who are new to fitness and are seeking guidance, equipment, and clothing to start their fitness journey. 
 
 - Athletes: Competitive athletes in various sports who need specialized equipment and nutrition products to enhance their performance and recovery.
 
@@ -72,14 +75,14 @@ The target audience for Peak Performance includes individuals who are interested
 
 ### Buisness Owner
 
-The buisness owner aims to create a thriving eCommerce site for nutritional products, attracting more customers through an attractive design and secure payments. They seek an interactive frontend to manage inventory effectively. They will be able to add, edit and delete stock when nessasary.
+The buisness owner aims to create a thriving eCommerce site for nutritional products, gym equipment and apparel which attracts more customers through an attractive design and secure payments. They seek an interactive frontend to manage inventory effectively. They will be able to add, edit and delete stock when nessasary.
 
 
 <br>
 
-### SEO 
+### Search Engine Optimisation
 
-During desing and development I put focuc on Search Engine Optimisation for the website. I did keyword research to identify the most relevant words that were not too high in volume I include these keywords in the meta tag descriptions. I also placed the key words on each of the websites pages  For images, I used descriptive file names and alt tags to improve the visibility of my website.included the different rel tags for the external website links as well.
+During desing and development, I put focus on Search Engine Optimisation for the website. I did keyword research to identify the most relevant words that were not too high in volume. I included these keywords in the meta tag descriptions. I also placed the keywords on each of the websites pages  For images, I used descriptive file names and alt tags to improve the visibility of my website. I used different rel tags for the external website links as well.
 
 ![alt text](static/images/keyword.JPG)
 
@@ -93,12 +96,11 @@ I successfully implemented an effective marketing strategy for my ecommerce webs
 I added of a newsletter signup form from MailChimp for the purposes of digital marketing.
 <br>
 
-Facebook buisness page
+![alt text](static/images/facebook.JPG)
 
 [PeakPerformance Facebook](https://www.facebook.com/profile.php?id=61550356434270)
 
-![alt text](static/images/facebook.JPG)
-
+<br>
 ---
 
 <br>
@@ -109,9 +111,7 @@ Facebook buisness page
 
 ### Structure of the app
 
-<br>
-
-The app is designed to have a natural flow, with the main focus on showcasing the products. All the pages include a header with navagation links to login/logout/sign up and links to all the pages. The website includes a footer at the bottom of each page with links to social media.
+The app is designed to have a natural flow, with the main focus on showcasing the quality inventory. All the pages include a header with navagation links to login/logout/sign up and links to all the pages. The website includes a footer at the bottom of each page with links to social media.
 
 
 ### Entity Relationship Diagram
@@ -166,24 +166,20 @@ I used Balsamiq to build wireframes for the website before I began developement.
 
 <br>
 
-I employed the Agile approach for my project, highlighting collective effort, adaptability, and client contentment. A fundamental element in Agile methodology is the use of user stories.
+I employed the Agile approach for my project, highlighting collective effort, adaptability, and customer contentment. A fundamental element in Agile methodology is the use of user stories.
 
-I orchestrated and oversaw user stories for my web project through GitHub issues. I formulated user stories pertaining to the capabilities and functionalities.
+I oversaw user stories for my web project through GitHub issues. I formulated user stories pertaining to the capabilities and functionalities.
 
-I charted out my user stories onto the GitHub project board for my website. I established a dedicated GitHub repository for my undertaking and leveraged the GitHub project tool to monitor the user stories. Each user story was interlinked with a corresponding GitHub issue, and priority levels were indicated using distinct labels.
+I charted out my user stories onto the GitHub project board for my website. I established a dedicated GitHub repository for my undertaking and leveraged the GitHub project tool to monitor the user stories. Each user story was interlinked with a corresponding GitHub issue, and priority levels were indicated using distinct labels. These labels were "must have" and "could have".
+
+
 <br>
 
-<br>
-
----
 
 ## User Stories
 
-<br>
 
-I brainstormed User Stories for my website and used the Github projects feature to track them
 
-I add two labels for the user stories which are "must have" and "could have"
 
 ![alt text](static/images/userstories.JPG)
 
@@ -303,7 +299,8 @@ As a Site User I can add a product to the cart so that proceed to purchasing it
 
 
 #### Acceptance Criteria
-Form available to add product to bag
+
+- Form available to add product to bag
 User can change quantity in the form
 
 ---
@@ -342,7 +339,7 @@ As a Site user I can ask and view questions about the products so that get bette
 
 #### Acceptance Criteria
 
-- User can view a list of questions.
+- User can view a list of questions
 
 - User can submit a new question
 
@@ -353,7 +350,7 @@ As a Site user I can submit a feedback form so that I can review the website and
 
 #### Acceptance Criteria
 
-- User can submit a form including the Product and its category
+- User can submit a form including the Product 
 
 ---
 
@@ -435,7 +432,7 @@ As a Site user I can checkout my products so that I can pay and receive my produ
 
 ### Navagation Bar
 
-The nav bar allows site users to signup/login/register and visit each page. It features a cart link on right side and drop down menus for account and admin
+The nav bar allows site users to signup/login/register and visit each page. It features a cart link on right side and drop-down menus for account and admin
 
 
 ![alt text](static/images/nav.JPG)
@@ -444,14 +441,14 @@ The nav bar allows site users to signup/login/register and visit each page. It f
 
 ### Home Page
 
-The home page gives the user information about the website. It allows them to register/login/logout and navagate to the products page. It features a carousel of three images.
+The home page gives the user information about the website. It allows them to register/login/logout and navigate to the products page. It features a carousel of three images.
 
 ![alt text](static/images/main.JPG)
 
 
 ### Footer
 
-The footer provides site users with links to the facebook buisness page
+The footer provides site users with links to the facebook buisness page. It also contains links to the different website pages
 
 
 ![alt text](static/images/foot.JPG)
@@ -459,7 +456,7 @@ The footer provides site users with links to the facebook buisness page
 
 ### Registering an account
 
-This feature allows users to register an account on the website. Users will need to enter their username and password to access their account. Email is optional. Once logged in, they will be able to unlock all the website features.
+This feature allows users to register an account on the website. Users will need to enter their username and password to access their account. Email is optional. Once logged in, they will be able to unlock and use all the website features.
 
 ![alt text](static/images/reg.JPG)
 
@@ -468,7 +465,9 @@ This feature allows users to register an account on the website. Users will need
 All the products in the inventory are listed on the product page.
 
 ![alt text](static/images/prod.JPG)
+
 ### Add Product
+
 This feature allows the admin to add a new product to the inventory. 
 
 ![alt text](static/images/add.JPG)
@@ -478,37 +477,53 @@ This feature allows the admin to add a new product to the inventory.
 This feature allows the admin to edit or update their existing products in the inventory. They can modify any details. This feature is useful when a mistake was made or the price has changed etc.
 
 ![alt text](static/images/edit.JPG)
+
 ### Profile page
 This is the profile page where the customers information and order history is stored. The information is updated every time a order is made. The customer also has front end form to update their details.
 
 ![alt text](static/images/profile.JPG)
+
 ### Feedback page
+
 This is an optional form page for the user to submit feedback/review on a product they bought.
+
 ![alt text](static/images/feed1.JPG)
 
 ### Feedback view page
 
 This feature is an admin only page to view all the feedback that the website has recieved.
+
 ![alt text](static/images/feed2.JPG)
 
 ### Refund request 
 
-This is an form page for the user to submit refund request on a product they bought.
+This is an form page for the user to submit a refund request on a product they bought.
 
 
 ![alt text](static/images/refund1.JPG)
+
 ### Refund view page
 
 This feature is an admin only page to view all the refund requests that customers have submitted
+
 ![alt text](static/images/refund2.JPG)
+
 ### Search bar
+
 This feature allows the site user to search for specific products. They can search for specific words or characters that are found in the products name or description.
+
 ![alt text](static/images/search.JPG)
+
 ### Q&A section
+
 This feature is placed on the product page and it allows site users to ask general questions to the owner/admin. As of now, there is no functionality for the admin to respond yet
+
 ![alt text](static/images/ques.JPG)
+
 ### Newsletter
+
 This page is dispaly a sign up form for the customer to receive news and offers. It is built with MailChimp and all emails are stored in the contacts
+
 ![alt text](static/images/News.JPG)
 
 ### Shopping cart page
@@ -518,6 +533,7 @@ The cart page displays the products that the customer has added to it. They also
 ![alt text](static/images/bag.JPG)
 
 ### Checkout page
+
 This is the checkout page for the customer to add their information and card details
 ![alt text](static/images/check.JPG)
 
@@ -528,6 +544,7 @@ The website is intergrated with the the Stripe API to handle payments. To use a 
 Card Number: 4242424242424242
 Expiration Date:  42/42
 CVN: 424
+
 ![alt text](static/images/stripe.JPG)
 
 
@@ -539,8 +556,6 @@ CVN: 424
 
 ## Testing
 
-<br>
-<br>
 
 The testing strategy for the website can be found here [Testing.md]
 
@@ -560,11 +575,15 @@ The testing strategy for the website can be found here [Testing.md]
 
 - Python: Used to program django.
 
-- Django: This was the main framework for the website..
+- Django: This was the main framework for the website
 
 - ElephantSQL: Used to host PostgreSQL database.
+  
+- Bootstrap for the frontend
 
 - Balsamiq: Used to design the websites wireframe.
+
+- Stripe payments: Used api for test card payments
 
 <br>
 
@@ -586,9 +605,11 @@ The testing strategy for the website can be found here [Testing.md]
 
 <br>
 
-The site was deployed via Heroku, and the live link can be found here - [SpendWise](https://expense-tracker-101.herokuapp.com/)
+The site was deployed via Heroku, and the live link can be found here - [PeakPerformance](<https://peak-perfomance-2c33a326e9fb.herokuapp.com/>)
 
 <br>
+
+The static files are hosted on Cloudinary[Cloudinary](https://console.cloudinary.com/users/register_free)
 
 ### Project Deployment
 
@@ -606,6 +627,7 @@ I deployed my project to Herou using the following steps:
 - In the env.py file, create a secret key. It should look like this: os.environ["SECRET_KEY"] = " Your Secret key ".
 - Copy your secret key and paste it into a Heroku config var. Use SECRET_KEY as the var key.
 - Copy the STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY and paste into Heroku env var.
+- Copy the cloudinary api key and past into Heroku env var
 - Copy and paste the following into your projects settings.py file : from pathlib import Path, import os, import dj_database_url,if os,path.isfile("env.py"):import env.
 - Remove djangos insecure key and replace it with: SECRET_KEY = os.environ.get('Your secret key').
 - Comment out the database section the setting.py file. Replace it with: DATABASES = { 'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))} .
@@ -646,37 +668,6 @@ I deployed my project to Herou using the following steps:
 
 <br>
 
-<br>
-
-## Credits
-
-<br>
-
-- The images were downloaded from the website pexels.com and I-stock.com
-- The footer social media Icons were generated from font awesome
-- The base template for the project was used from Code Institutes "Boutique-ado" walktrough.
-- I used Code institute's walthrough projects "Hello Django" and "I think, therefore I blog" to learn the Django fundamentals
-
-<br>
-
--------------
-seo
-
-I researched keywords for high voloume with little 
-i add decriptive tages for the images
-I tried include keywords in the projects html elements alos
-I changed the image file name to be more descriptive
-
-
-
-
-
-
-
-
-
-
-
 
 ### Forking the project
 
@@ -696,5 +687,17 @@ I changed the image file name to be more descriptive
 - Copy the url.
 - Open git bash
 - Type ‘git clone’ and then paste the URL you copied. Press Enter.
+
+<br>
+
+## Credits
+
+<br>
+
+- The images were downloaded from the website pexels.com and I-stock.com
+- The footer social media Icons were generated from font awesome
+- The base template for the project was used from Code Institutes "Boutique-ado" walktrough.
+- I used Code institute's walthrough projects "Hello Django" and "I think, therefore I blog" to learn the Django fundamentals
+
 
 <br>
