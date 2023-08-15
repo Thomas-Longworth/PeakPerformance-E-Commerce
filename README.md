@@ -521,6 +521,7 @@ The cart page displays the products that the customer has added to it. They also
 ### Checkout page
 
 This is the checkout page for the customer to add their information and card details
+
 ![alt text](static/images/check.JPG)
 
 ### Stripe
@@ -543,7 +544,7 @@ CVN: 424
 ## Testing
 
 
-The testing strategy for the website can be found here [Testing.md]
+The testing strategy for the website can be found here [Testing.md](https://github.com/Thomas-Longworth/PeakPerformance-E-Commerce/blob/main/TESTING.md)
 
 <br>
 
