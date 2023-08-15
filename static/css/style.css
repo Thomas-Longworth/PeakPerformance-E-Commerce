@@ -490,3 +490,11 @@ hr {
 .mess {
     color: black;
 }
+
+
+
+@media (max-width: 768px) {
+    .fixer {
+        position: static;
+    }
+}
