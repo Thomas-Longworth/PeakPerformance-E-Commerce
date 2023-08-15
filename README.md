@@ -14,6 +14,7 @@
 --------------------------------------
 
 - [About](#about)
+- [Objectives](#objectives)
 - [Design](#design)
 - [Agile Development](#agile-development)
 - [Features](#features)
@@ -33,40 +34,41 @@
 
 <br>
 
-[PeakPerformance]()
+[PeakPerformance](https://peak-perfomance-2c33a326e9fb.herokuapp.com)
 
-Welcome to Peak Performance, your one-stop destination for all things fitness! Our gym website is dedicated to helping you reach the pinnacle of your fitness journey. Explore our extensive range of premium nutritional products, carefully curated to fuel your body and optimize performance. Elevate your workouts with top-notch gym equipment designed to push your limits and achieve your goals. Show off your style and dedication with our stylish and comfortable apparel, perfect for both in and out of the gym. Whether you're a seasoned fitness enthusiast or just starting, Peak Performance is here to support you every step of the way, ensuring you reach new heights in your fitness endeavors. Unleash your true potential with us!
+Welcome to Peak Performance, your one-stop destination for all things fitness! This website is dedicated to helping you reach the pinnacle of your fitness journey. Explore our extensive range of premium nutritional products, carefully curated to fuel your body and optimize performance. Elevate your workouts with top-notch gym equipment designed to push your limits and achieve your goals. Show off your style and dedication with our stylish and comfortable apparel, perfect for both in and out of the gym. Whether you're a seasoned fitness enthusiast or just starting, Peak Performance is here to support you every step of the way, ensuring you reach new heights in your fitness endeavors. Unleash your true potential with us!
 
-<https://peak-perfomance-2c33a326e9fb.herokuapp.com/>
+
 <br>
 
----
----
+## Objectives
+
 <br>
 
 ### Project Goals
 
-PeakPerformance is my fifth and final Portfolio Project for Code Institute's Diploma in Full Stack Software Development (E-Commerce Applications). It is a Full Stack website aimed at covering HTML,CSS,Javascript,Bootstrap, Python and Django.
+PeakPerformance is my fifth and final Portfolio Project for Code Institute's Diploma in Full Stack Software Development (E-Commerce Applications). It is a Full Stack website at showcasing skill in HTML,CSS,Javascript,Bootstrap, Python and Django.
 
-
+<br>
 ---
 
-E-Commerce Model
+### E-Commerce Model
 
-PeakPerformance is an B2C e-commerce platform that specializes in selling gym/nutritional products to consumers. he goal is to provide customers with  good value, high quality products.  The target market for the website is aimed at fitness enthusiasts of all ages.  This is a Business to Consumer model and it aimed at appealing to customers and guests. It features a newsletter signup form where customer will be offered incentives such as exclusive deals, discounts, or relevant content to encourage signups.
-
-
-<br>
-
-Buisness Owner
-
-The buisness owner aims to create a thriving eCommerce site for nutritional products, attracting more customers through an attractive design and secure payments. They seek an interactive frontend to manage inventory effectively. They will be able to add, edit and delete stock when nessasary
-
+PeakPerformance is an B2C e-commerce platform that specializes in selling gym/nutritional/apparel products to consumers. The goal is to provide customers with  good value, high quality products. The target market for the website is aimed at fitness enthusiasts of all ages. This is a Business to Consumer model and it aimed at appealing to both customers and site guests. It features a newsletters signup form where customer will be offered incentives such as exclusive deals, discounts, or relevant content to encourage signups.
 
 
 <br>
 
-SEO 
+### Buisness Owner
+
+The buisness owner aims to create a thriving eCommerce site for nutritional products, attracting more customers through an attractive design and secure payments. They seek an interactive frontend to manage inventory effectively. They will be able to add, edit and delete stock when nessasary.
+
+
+<br>
+
+### SEO 
+
+During desing and development I put focuc on Search Engine Optimisation for the website. I did keyword research to identify the most relevant words that were not too high in volume I include these keywords in the meta tag descriptions. I also placed the key words on each of the websites pages  For images, I used descriptive file names and alt tags to improve the visibility of my website.included the different rel tags for the external website links as well.
 
 ![alt text](static/images/keyword.JPG)
 
@@ -76,6 +78,8 @@ SEO
 Marketing  Stragegy 
 
 I successfully implemented an effective marketing strategy for my ecommerce website through a dedicated Facebook business page. Leveraging the power of social media, I crafted engaging and informative images that showcases the products.This comprehensive approach of buildina a Facebook business page significantly expanded the online presence of the website, attracting a larger customer base and contributing to increased sales and brand loyalty.
+
+I added of a newsletter signup form from MailChimp for the purposes of digital marketing.
 <br>
 
 Facebook buisness page
