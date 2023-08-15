@@ -5,17 +5,75 @@
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
 {% block content %}
-<h1>{% trans "Sign Up" %}</h1>
+<div class="container mt-5">
 
-<p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+    <h1>{% trans "Sign Up" %}</h1>
 
-<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
-  {% csrf_token %}
-  {{ form.as_p }}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-  {% endif %}
-  <button type="submit">{% trans "Sign Up" %} &raquo;</button>
-</form>
+    <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}
+    </p>
 
+    <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        {% if redirect_field_value %}
+        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+        {% endif %}
+        <button type="submit">{% trans "Sign Up" %} &raquo;</button>
+    </form>
+</div>
+{% endblock %}
+
+{% block footer %}
+
+<div class="container-fluid mt-5 dark fixed-bottom">
+    <div class="cardfoot  mx-5 ">
+        <div class="row mb-4 dark ">
+            <div class="col-md-4 col-sm-4 col-xs-4 dark ">
+                <div class="footer-text pull-left dark">
+                    <div class="d-flex ">
+                        <h1 class="white small">PeakPerformance</h1>
+                    </div>
+                    <p class="card-text grey">Empowering Fitness Journeys, One Product at a Time</p>
+
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2"></div>
+            <div class="col-md-2 col-sm-2 col-xs-2 dark ">
+                <h5 class="heading ">Navagation</h5>
+                <ul class="nlinks">
+                    <li><a class="nlinks" href="/">Home</a></li>
+                    <li><a class="nlinks" href="{% url 'products' %}">Products</a></li>
+                    <li><a class="nlinks" href="/">Account</a></li>
+
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2 dark">
+                <h5 class="heading white">Contact Us</h5>
+                <ul class="card-text ">
+                    <li><a class="nlinks" href="{% url 'subscription' %}">Newsletter</a>
+                    </li>
+                    {% if request.user.is_authenticated %}
+                    <li><a class="nlinks" href="{% url 'request_view' %}">Refunds</a></li>
+                    <li><a class="nlinks" href="{% url 'feedback_view' %}">Feedback</a></li>
+                    {% endif %}
+
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2 dark ">
+                <h5 class="heading diff white">Social media</h5>
+                <ul class="card-text ">
+                    <li><a class="nlinks" href="https://www.facebook.com/profile.php?id=61550356434270" target="_blank"
+                            rel="noopener"><i class="fa-brands fa-facebook"></i></a></li>
+
+                    <li><a class="nlinks" href="https://instagram.com/" target="_blank" rel="noopener"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+
+                    <li><a class="nlinks" href="https://twitter.com/" target="_blank" rel="noopener"><i
+                                class="fa-brands fa-square-twitter"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
 {% endblock %}

@@ -7,41 +7,83 @@
 
 {% block inner_content %}
 
-<h1>{% trans "Sign In" %}</h1>
+<div class="container mt-0">
+    <br>
+    <br>
+    <h1>{% trans "Sign In" %}</h1>
 
-{% get_providers as socialaccount_providers %}
 
-{% if socialaccount_providers %}
-<p>{% blocktrans with site.name as site_name %}Please sign in with one
-    of your existing third party accounts. Or, <a href="{{ signup_url }}">sign up</a>
-    for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
+    <p>{% blocktrans %}If you have not created an account yet, then please
+        <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}
+    </p>
 
-<div class="socialaccount_ballot">
 
-    <ul class="socialaccount_providers">
-        {% include "socialaccount/snippets/provider_list.html" with process="login" %}
-    </ul>
 
-    <div class="login-or">{% trans 'or' %}</div>
+
+    <form class="login" method="POST" action="{% url 'account_login' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        {% if redirect_field_value %}
+        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+        {% endif %}
+        <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+        <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
+    </form>
 
 </div>
 
-{% include "socialaccount/snippets/login_extra.html" %}
-
-{% else %}
-<p>{% blocktrans %}If you have not created an account yet, then please
-    <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}
-</p>
-{% endif %}
-
-<form class="login" method="POST" action="{% url 'account_login' %}">
-    {% csrf_token %}
-    {{ form.as_p }}
-    {% if redirect_field_value %}
-    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-    {% endif %}
-    <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
-    <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
-</form>
-
 {% endblock %}
+{% block footer %}
+
+<div class="container-fluid mt-5 dark fixed-bottom">
+    <div class="cardfoot  mx-5 ">
+        <div class="row mb-4 dark ">
+            <div class="col-md-4 col-sm-4 col-xs-4 dark ">
+                <div class="footer-text pull-left dark">
+                    <div class="d-flex ">
+                        <h1 class="white small">PeakPerformance</h1>
+                    </div>
+                    <p class="card-text grey">Empowering Fitness Journeys, One Product at a Time</p>
+
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2"></div>
+            <div class="col-md-2 col-sm-2 col-xs-2 dark ">
+                <h5 class="heading ">Navagation</h5>
+                <ul class="nlinks">
+                    <li><a class="nlinks" href="/">Home</a></li>
+                    <li><a class="nlinks" href="{% url 'products' %}">Products</a></li>
+                    <li><a class="nlinks" href="/">Account</a></li>
+
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2 dark">
+                <h5 class="heading white">Contact Us</h5>
+                <ul class="card-text ">
+                    <li><a class="nlinks" href="{% url 'subscription' %}">Newsletter</a>
+                    </li>
+                    {% if request.user.is_authenticated %}
+                    <li><a class="nlinks" href="{% url 'request_view' %}">Refunds</a></li>
+                    <li><a class="nlinks" href="{% url 'feedback_view' %}">Feedback</a></li>
+                    {% endif %}
+
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2 dark ">
+                <h5 class="heading diff white">Social media</h5>
+                <ul class="card-text ">
+                    <li><a class="nlinks" href="https://www.facebook.com/profile.php?id=61550356434270" target="_blank"
+                            rel="noopener"><i class="fa-brands fa-facebook"></i></a></li>
+
+                    <li><a class="nlinks" href="https://instagram.com/" target="_blank" rel="noopener"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+
+                    <li><a class="nlinks" href="https://twitter.com/" target="_blank" rel="noopener"><i
+                                class="fa-brands fa-square-twitter"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    {% endblock %}

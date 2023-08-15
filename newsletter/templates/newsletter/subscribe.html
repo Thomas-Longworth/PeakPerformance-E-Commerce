@@ -45,8 +45,62 @@
     </div>
 
 </div>
+{% block footer %}
 
-<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-<script
-    type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
-{% endblock %}
+<div class="container-fluid mt-5 dark fixed-bottom">
+    <div class="cardfoot  mx-5 ">
+        <div class="row mb-4 dark ">
+            <div class="col-md-4 col-sm-4 col-xs-4 dark ">
+                <div class="footer-text pull-left dark">
+                    <div class="d-flex ">
+                        <h1 class="white small">PeakPerformance</h1>
+                    </div>
+                    <p class="card-text grey">Empowering Fitness Journeys, One Product at a Time</p>
+
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2"></div>
+            <div class="col-md-2 col-sm-2 col-xs-2 dark ">
+                <h5 class="heading ">Navagation</h5>
+                <ul class="nlinks">
+                    <li><a class="nlinks" href="/">Home</a></li>
+                    <li><a class="nlinks" href="{% url 'products' %}">Products</a></li>
+                    <li><a class="nlinks" href="/">Account</a></li>
+
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2 dark">
+                <h5 class="heading white">Contact Us</h5>
+                <ul class="card-text ">
+                    <li><a class="nlinks" href="{% url 'subscription' %}">Newsletter</a>
+                    </li>
+                    {% if request.user.is_authenticated %}
+                    <li><a class="nlinks" href="{% url 'request_view' %}">Refunds</a></li>
+                    <li><a class="nlinks" href="{% url 'feedback_view' %}">Feedback</a></li>
+                    {% endif %}
+
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2 dark ">
+                <h5 class="heading diff white">Social media</h5>
+                <ul class="card-text ">
+                    <li><a class="nlinks" href="https://www.facebook.com/profile.php?id=61550356434270" target="_blank"
+                            rel="noopener"><i class="fa-brands fa-facebook"></i></a></li>
+
+                    <li><a class="nlinks" href="https://instagram.com/" target="_blank" rel="noopener"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+
+                    <li><a class="nlinks" href="https://twitter.com/" target="_blank" rel="noopener"><i
+                                class="fa-brands fa-square-twitter"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    {% endblock %}
+
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <script
+        type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+    {% endblock %}
