@@ -44,14 +44,14 @@ Welcome to Peak Performance. This website is dedicated to helping you reach the 
 
 ### Project Goals
 
-PeakPerformance is my fifth and final Portfolio Project for Code Institute's Diploma in Full Stack Software Development (E-Commerce Applications). It is a Full Stack website at showcasing skill in HTML,CSS,Javascript,Bootstrap, Python and Django.
+PeakPerformance is my fifth and final Portfolio Project for Code Institute's Diploma in Full Stack Software Development (E-Commerce Applications). It is a Full Stack website at showcasing skill in HTML, CSS, Javascript,Bootstrap, Python and Django.
 
 <br>
 
 
 ### E-Commerce Model
 
-PeakPerformance is an B2C e-commerce platform that specializes in selling gym/nutritional/apparel products to consumers. The goal is to provide customers with  good value, high quality products. The website is aimed at fitness enthusiasts of all ages. This is a Business to Consumer model and it aimed at appealing to both customers and site guests. It features a newsletters signup form where customer will be offered incentives such as exclusive deals, discounts, or relevant content to encourage signups.
+PeakPerformance is an B2C e-commerce platform that specializes in selling gym/nutritional/apparel products to consumers. The goal is to provide customers with  good value, high quality products. The website is aimed at fitness enthusiasts of all ages. This is a Business to Consumer model and it aimed at appealing to both customers and site guests. It alos features a newsletters signup form where customers will be offered incentives such as exclusive deals, discounts, or relevant content to encourage signups.
 
 <br>
 
@@ -82,7 +82,7 @@ The buisness owner aims to create a thriving eCommerce site for nutritional prod
 
 ### Search Engine Optimisation
 
-During desing and development, I put focus on Search Engine Optimisation for the website. I did keyword research to identify the most relevant words that were not too high in volume. I included these keywords in the meta tag descriptions. I also placed the keywords on each of the websites pages  For images, I used descriptive file names and alt tags to improve the visibility of my website. I used different rel tags for the external website links as well.
+During design and development, I put focus on Search Engine Optimisation for the website. I did keyword research to identify the most relevant words that were not too high in volume. I included these keywords in the meta tag descriptions. I also placed the keywords on each of the websites pages  For images, I used descriptive file names and alt tags to improve the visibility of my website. I used different rel tags for the external website links as well. I include a sitemap.xml and robots.txt file.
 
 ![alt text](static/images/keyword.JPG)
 
@@ -101,9 +101,10 @@ I added of a newsletter signup form from MailChimp for the purposes of digital m
 [PeakPerformance Facebook](https://www.facebook.com/profile.php?id=61550356434270)
 
 <br>
+
+
 ---
 
-<br>
 
 ## Design/UX
 
@@ -113,6 +114,7 @@ I added of a newsletter signup form from MailChimp for the purposes of digital m
 
 The app is designed to have a natural flow, with the main focus on showcasing the quality inventory. All the pages include a header with navagation links to login/logout/sign up and links to all the pages. The website includes a footer at the bottom of each page with links to social media.
 
+<br>
 
 ### Entity Relationship Diagram
 
@@ -128,15 +130,10 @@ I used Balsamiq to build wireframes for the website before I began developement.
 
 <br>
 
-<br>
-
 - Wireframe for the Home page
-
-<br>
 
 ![alt text](static/images/wireframe1.png)
 
-<br>
 
 - Wireframe for the products page
 
@@ -144,10 +141,6 @@ I used Balsamiq to build wireframes for the website before I began developement.
 
 ![alt text](static/images/wireframe2.png)
 
-
--------------
-
-<br>
 
 - Wireframe for the product detail page
 
@@ -417,14 +410,6 @@ As a Site user I can checkout my products so that I can pay and receive my produ
 
 
 
-
-
-<br>
-
-------
-
-<br>
-
 ## Features
 
 <br>
@@ -479,6 +464,7 @@ This feature allows the admin to edit or update their existing products in the i
 ![alt text](static/images/edit.JPG)
 
 ### Profile page
+
 This is the profile page where the customers information and order history is stored. The information is updated every time a order is made. The customer also has front end form to update their details.
 
 ![alt text](static/images/profile.JPG)
@@ -609,7 +595,7 @@ The site was deployed via Heroku, and the live link can be found here - [PeakPer
 
 <br>
 
-The static files are hosted on Cloudinary[Cloudinary](https://console.cloudinary.com/users/register_free)
+The static files are hosted on Cloudinary[Cloudinary](<https://console.cloudinary.com/users/register_free>)
 
 ### Project Deployment
 
@@ -640,31 +626,6 @@ I deployed my project to Herou using the following steps:
 - Make a new file call Procfile. Add the following code: web: gunicorn ProjectName.wsgi
 - Add, commit and push all changes to Github.
 - Navigate to the deployment tab in Heroku. Link your github repo to Heroku and deploy the branch manually. View the build log for any errors. It will dipslay a link to the live site.
-
-<br>
-
-### Forking the project
-
-<br>
-
-- Sign/regester in to Github and go to my repository at <https://github.com/Thomas-Longworth/Expense-tracker> .
-- Navagage the Fork button at the top right of the page and select it.
-- The fork is now created and copied to your repositories.
-
-<br>
-
-### Cloning the project
-  
-- Sign/regester in to Github and go to my repository at <https://github.com/Thomas-Longworth/Expense-tracker> .
-- Select the green ‘code’ button.
-- Choose which clone option you want(HTTPS, SSH or Github CLI).
-- Copy the url.
-- Open git bash
-- Type ‘git clone’ and then paste the URL you copied. Press Enter.
-
-<br>
-
---------
 
 <br>
 
