@@ -47,7 +47,7 @@
     </a>
 </div>
 
-<div style="height: 200px" class="container d-flex align-items-center justify-content-center">
+<div style="height: 200px" class="container d-flex align-items-center justify-content-center btcontain">
     <div class="container">
         <h3>Begin your fitness journey here</h3>
         <a class="nav-link" href="{% url 'products' %}">
@@ -56,7 +56,7 @@
     </div>
     {% if not request.user.is_authenticated %}
     <div class="container">
-        <h3>Don't have an account yet? Register now</h3>
+        <h3>Not registered yet? Click here</h3>
         <a class="nav-link" href="{% url 'account_signup' %}">
             <button type="button" class="btn btn-secondary">Register</button>
         </a>

@@ -24,14 +24,14 @@
                             <th scope="col">Name</th>
                             <th scope="col">Price</th>
                             <th scope="col">Qty</th>
-                            <th scope="col"></th>
 
-                            <th scope="col">Subtotal</th>
+
+                            <th class="text-center" scope="col">Subtotal</th>
                         </tr>
                     </thead>
                     {% for item in bag_items %}
                     <tr>
-                        <td class="p-3 w-20">
+                        <td class="p-3 w-5">
                             <img src="{{ item.product.featured_image.url }}" height="75px">
                         </td>
                         <td class="py-2">
@@ -45,19 +45,16 @@
                             <p class="my-0">{{item.quantity}}</p>
                         </td>
 
-
-                        <td class="py-2 w-15">
+                        <td class="py-2 w-5">
 
                             <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                                 {% csrf_token %}
                                 <div class="form-group">
                                     <div class="input-group">
-
                                         <input class="form-control form-control-sm" type="hidden" name="quantity"
                                             value="{{ item.quantity }}" min="1" max="99"
                                             data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }} ">
-
-                                        <div class="input-group-append">
+                                        <div class=" input-group-append">
                                             <button
                                                 class="increment-qty btn btn-sm btn-black rounded-0 text-danger border"
                                                 data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
@@ -66,13 +63,13 @@
                                                 </span>
                                             </button>
                                         </div>
+                                        <p class=""> ${{ item.product.price | calc_subtotal:item.quantity }}
+                                        </p>
                                     </div>
+
                                 </div>
                             </form>
 
-                        </td>
-                        <td class="py-3">
-                            <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
                         </td>
                     </tr>
                     {% endfor %}
