@@ -1,9 +1,8 @@
 # PeakPerformance
 
-------------------------------------
-<br>
 
-![alt text](static/images/gym.jpg)
+
+![alt text](static/images/response.JPG)
 
 <br>
 
@@ -54,8 +53,20 @@ PeakPerformance is my fifth and final Portfolio Project for Code Institute's Dip
 
 ### E-Commerce Model
 
-PeakPerformance is an B2C e-commerce platform that specializes in selling gym/nutritional/apparel products to consumers. The goal is to provide customers with  good value, high quality products. The target market for the website is aimed at fitness enthusiasts of all ages. This is a Business to Consumer model and it aimed at appealing to both customers and site guests. It features a newsletters signup form where customer will be offered incentives such as exclusive deals, discounts, or relevant content to encourage signups.
+PeakPerformance is an B2C e-commerce platform that specializes in selling gym/nutritional/apparel products to consumers. The goal is to provide customers with  good value, high quality products. The website is aimed at fitness enthusiasts of all ages. This is a Business to Consumer model and it aimed at appealing to both customers and site guests. It features a newsletters signup form where customer will be offered incentives such as exclusive deals, discounts, or relevant content to encourage signups.
 
+### Target audience
+The target audience for Peak Performance includes individuals who are interested in fitness, health, and improving their overall well-being. 
+- Fitness Enthusiasts: These are individuals who are actively engaged in fitness activities, such as weightlifting, running, yoga, or crossfit. They might be looking for high-quality gym equipment and apparel to support their workouts.
+- Health-Conscious Individuals: People who prioritize their health and wellness, and are looking for nutritional supplements, vitamins, and other products to support their balanced diets.
+
+- Beginners: Those who are new to fitness and are seeking guidance, equipment, and clothing to start their fitness journey. T
+
+- Athletes: Competitive athletes in various sports who need specialized equipment and nutrition products to enhance their performance and recovery.
+
+- Weight Loss Seekers: Individuals aiming to lose weight or maintain a healthy weight through proper nutrition and exercise. They might be interested in nutritional products and exercise equipment that help them achieve their goals.
+
+- Bodybuilders: Those who focus on building muscle mass and strength. They might need specific nutritional supplements and gym equipment tailored to their goals.
 
 <br>
 
@@ -75,7 +86,7 @@ During desing and development I put focuc on Search Engine Optimisation for the 
 
 <br>
 
-Marketing  Stragegy 
+### Marketing  Strategy 
 
 I successfully implemented an effective marketing strategy for my ecommerce website through a dedicated Facebook business page. Leveraging the power of social media, I crafted engaging and informative images that showcases the products.This comprehensive approach of buildina a Facebook business page significantly expanded the online presence of the website, attracting a larger customer base and contributing to increased sales and brand loyalty.
 
@@ -84,24 +95,30 @@ I added of a newsletter signup form from MailChimp for the purposes of digital m
 
 Facebook buisness page
 
+[PeakPerformance Facebook](https://www.facebook.com/profile.php?id=61550356434270)
+
 ![alt text](static/images/facebook.JPG)
+
+---
+
+<br>
 
 ## Design/UX
 
 <br>
 
-#### Structure of the app
+### Structure of the app
 
 <br>
 
 The app is designed to have a natural flow, with the main focus on showcasing the products. All the pages include a header with navagation links to login/logout/sign up and links to all the pages. The website includes a footer at the bottom of each page with links to social media.
 
 
-### Entity relationship diagram
+### Entity Relationship Diagram
 
 ![alt text](static/images/erd.png)
 
-#### Wireframes
+### Wireframes
 
 <br>
 
@@ -442,212 +459,81 @@ The footer provides site users with links to the facebook buisness page
 
 ### Registering an account
 
-This feature allows users to registered an account ontthe website. Users will need to enter their username and password to access their account. Email is optional. Once logged in, they will be able to unlock all the website features.
+This feature allows users to register an account on the website. Users will need to enter their username and password to access their account. Email is optional. Once logged in, they will be able to unlock all the website features.
 
 ![alt text](static/images/reg.JPG)
 
 ### Products
 
 All the products in the inventory are listed on the product page.
-![alt text](static/images/prod.JPG)
 
-This feature allows users to edit or update their existing expenses. Users can modify the details of an expense such as the date, amount, category, or description. This feature is useful when users make a mistake or need to make changes to their expenses.
+![alt text](static/images/prod.JPG)
+### Add Product
+This feature allows the admin to add a new product to the inventory. 
 
 ![alt text](static/images/add.JPG)
-### edit
-This feature allows the admin to edit or update their existing products in the inventory. They can modify any details. This feature is useful when users make a mistake or need to make changes to their expenses.
+
+### Edit Product
+
+This feature allows the admin to edit or update their existing products in the inventory. They can modify any details. This feature is useful when a mistake was made or the price has changed etc.
 
 ![alt text](static/images/edit.JPG)
+### Profile page
+This is the profile page where the customers information and order history is stored. The information is updated every time a order is made. The customer also has front end form to update their details.
+
 ![alt text](static/images/profile.JPG)
-
+### Feedback page
+This is an optional form page for the user to submit feedback/review on a product they bought.
 ![alt text](static/images/feed1.JPG)
-![alt text](static/images/feed2.JPG)
-![alt text](static/images/refund1.JPG)
-![alt text](static/images/refund2.JPG)
 
+### Feedback view page
+
+This feature is an admin only page to view all the feedback that the website has recieved.
+![alt text](static/images/feed2.JPG)
+
+### Refund request 
+
+This is an form page for the user to submit refund request on a product they bought.
+
+
+![alt text](static/images/refund1.JPG)
+### Refund view page
+
+This feature is an admin only page to view all the refund requests that customers have submitted
+![alt text](static/images/refund2.JPG)
+### Search bar
+This feature allows the site user to search for specific products. They can search for specific words or characters that are found in the products name or description.
 ![alt text](static/images/search.JPG)
+### Q&A section
+This feature is placed on the product page and it allows site users to ask general questions to the owner/admin. As of now, there is no functionality for the admin to respond yet
 ![alt text](static/images/ques.JPG)
-![alt text](static/images/news.JPG)
+### Newsletter
+This page is dispaly a sign up form for the customer to receive news and offers. It is built with MailChimp and all emails are stored in the contacts
+![alt text](static/images/News.JPG)
+
+### Shopping cart page
+
+The cart page displays the products that the customer has added to it. They also have the ability to remove that particular product.
+
+![alt text](static/images/bag.JPG)
+
+### Checkout page
+This is the checkout page for the customer to add their information and card details
 ![alt text](static/images/check.JPG)
 
+### Stripe
+
+The website is intergrated with the the Stripe API to handle payments. To use a mock payment, enter the following card details 
+
+Card Number: 4242424242424242
+Expiration Date:  42/42
+CVN: 424
 ![alt text](static/images/stripe.JPG)
 
 
 <br>
 
 ---------
-<br>
-
-### Expenses Page
-
-<br>
-
-THe expenses page allows users to create, add, update and delete expenses. They can adjust their total budget and see the expenses total subtracted from it. It also allows them to register/login/logout and navagate to the Home page
-
-<br>
-
-![alt text](static/images/expenses.JPG)
-
-<br>
-
----------
-
-<br>
-
-### Nav Bar
-
-The nav bar allows site users to signup/login/register and visit each page.
-
-<br>
-
-![alt text](static/images/nav.JPG)
-
----------
-
-<br>
-
-### Footer
-
-<br>
-
-The footer provides site users with links to social media.
-
-<br>
-
-![alt text](static/images/footer.JPG)
-
-<br>
-
----------
-
-<br>
-
-### User Register
-
-<br>
-
-
-<br>
-
-![alt text](static/images/registerpage.JPG)
-
-<br>
-
----------
-
-<br>
-
-### User Login
-
-<br>
-
-
-<br>
-
-![alt text](static/images/loginpage.JPG)
-
-<br>
-
------------
-
-<br>
-
-### User Logout
-
-<br>
-
-User logout: This feature allows users to log out of their account when they are finished using the website. Logging out ensures that their account remains secure and that no one else can access their expenses.
-
-<br>
-
-![alt text](static/images/logoutpage.JPG)
-
-<br>
-
----------------
-
-<br>
-
-### Budget calculator
-
-<br>
-
-This feature allows users to set a budget for a specific period, such as a month or a week, and track their expenses against that budget. Users can input their budget and their expenses will be subtracted from it. The calculator shows how much of their budget is left to spend
-
-<br>
-
-![alt text](static//images/budgetformpage.JPG)
-<br>
-
-![alt text](static/images/budgetdisplay.JPG)
-
-<br>
-
-----------
-
-<br>
-
-### Read Expenses
-
-<br>
-
-This feature allows users to view their existing expenses. Users can see a list of all their expenses on a single page.This feature helps users keep track of their spending and identify areas where they might need to cut back.
-
-<br>
-
-![alt text](static/images/readexpenses.JPG)
-
-<br>
-
-------
-
-<br>
-
-### Create Expenses
-
-<br>
-
-This feature allows users to add new expenses to their account. Users can input details such as the date, amount and namen of each expense. This feature makes it easy for users to record their spending.
-
-<br>
-
-![alt text](static/images/createxpense.JPG)
-
-<br>
-
----------
-
-<br>
-
-### Update Expenses
-
-<br>
-
-This feature allows users to edit or update their existing expenses. Users can modify the details of an expense such as the date, amount, category, or description. This feature is useful when users make a mistake or need to make changes to their expenses.
-
-<br>
-
-![alt text](static/images/editexpense.JPG)
-
-<br>
-
-------
-
-<br>
-
-### Delete Expenses
-
-<br>
-
-This feature allows users to remove an expense from their account. Users can delete an expense they no longer need, such as an expense that was entered in error or a duplicate expense. This feature helps users keep their expense records organized and up to date.
-
-<br>
-
-![alt text](static/images/deleteexpense.JPG)
-
-<br>
-
-------------
 
 <br>
 

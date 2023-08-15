@@ -33,8 +33,9 @@ I decided on a manual testing strategy for the development of the site. I did th
 <br>
 
 - I manually tested the responsiveness of the website on many devices. I used Chrome DevTools to simulate different screen sizes also. I made sure there were not significant issues such as overlapping text, images not scaling properly, and buttons that are difficult to click.
+  
 - I rigorously tried different data into forms and fields to assess the validation and error-handling mechanisms.
-- I checked that the website worked in the following browsers: Google Chrome, Mozilla Firefox, Apple Safari, Microsoft Edge.
+- I checked that the website worked in the following browsers: Google Chrome, Mozilla Firefox, Apple Safari, Microsoft Edge. I verified that all major features, such as product listings, shopping cart, and payments worked on different browsers.
 
   
 - Furthermore, I analyze the website's functionality by interacting with features like buttons, dropdowns, and navigation menus to confirm their proper working. This thorough manual testing process guarantees a smooth and user-friendly experience for visitors to my website
